@@ -16,12 +16,12 @@ export default function Homepart1() {
         <Grid container spacing={2}>
   <Grid item  lg={5} >
     <Box sx={{paddingLeft:'40px'}}>
-        <Button  variant='contained' sx={{backgroundColor:'var(--orange)',width:"300px",height:"75px",fontSize:'large'}}>SIMPLE PRICING</Button>
+        <Button  variant='contained' sx={{backgroundColor:'var(--orange)',width:"250px",height:"75px",fontSize:'large'}}>SIMPLE PRICING</Button>
         
 
 <Typography mb='20px' mt='20px' variant='h3'><span style={{color:"var(--orange)"}}> Internet Marketing </span> With Transparent Pricing</Typography>
 <Typography mb='20px'>We’re confident in our digital marketing services. If you have any questions or would like a service you don’t see listed, don’t hesitate to ask.</Typography>
-<Box sx={{textAlign:'center', padding:'20px' ,border:'2px solid var(--orange)'}}>
+<Box sx={{textAlign:'center',  padding:'20px' ,border:'2px solid var(--orange)'}}>
 <Typography variant='h5' color="var(--orange)">We Know Big And Small Business</Typography>
 
 <Typography >Since 2012, Funnel Boost Media has provided internet marketing services in San Antonio, TX. Through our demonstrated passion for measurable lead generation strategies, we’ve helped businesses across the country recognize search engines as one of their most valued marketing tools.</Typography>

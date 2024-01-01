@@ -77,8 +77,8 @@ export default function Navbar() {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
-    <AppBar position="sticky" sx={{ bgcolor:'white'}}>
-      <Toolbar sx={{ justifyContent: 'space-between' ,marginY:'10px'}}>
+    <AppBar  sx={{ bgcolor:'white'}}>
+      <Toolbar sx={{ position:'sticky', justifyContent: 'space-between' ,marginY:'10px'}}>
       <Image
         src="/logo.png" 
         alt="Description of the image"
@@ -114,29 +114,10 @@ export default function Navbar() {
         
         </Box>
 
-
-
-        
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <Menu
+   
+      </Toolbar>
+    </AppBar>
+     <Menu
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
@@ -198,9 +179,6 @@ export default function Navbar() {
         <MenuItem onClick={handleClose}>Item 2</MenuItem>
         <MenuItem onClick={handleClose}>Item 3</MenuItem>
       </Menu>
-      </Toolbar>
-    </AppBar>
-    
   </Box>
  
   )

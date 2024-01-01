@@ -15,7 +15,7 @@ const gridstyle = {
 export default function Homepart0() {
   
   return (
-    <Box sx={{marginBottom:'40px'}}>
+    <Box sx={{marginY:'70px'}}>
     <Box sx={{bgcolor:"#021C36",display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:'5%'}}>
         <Image
         src="/head.png" 

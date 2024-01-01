@@ -1,6 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Box, Button, Container, Grid, Typography } from '@mui/material'
+const gridstyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems:"center"
+
+ 
+
+};
 
 export default function Homepart1() {
   return (
@@ -20,7 +28,7 @@ export default function Homepart1() {
 </Box>
 </Box>
 </Grid>
-<Grid item align='center'  lg={7}>
+<Grid item sx={gridstyle}  lg={7}>
 
 <Image
         src="/shutterstock.png" 

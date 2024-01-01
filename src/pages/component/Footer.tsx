@@ -9,14 +9,22 @@ const titele = {
  
 
 };
+const gridstyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems:"center"
+
+ 
+
+};
 
 export default function Footer() {
   return (
     
-    <Box sx={{minWidth:"100%",bgcolor:'#021C36;',color:'white',marginTop:"30px"}}>
+    <Box sx={{  minWidth:"100%",bgcolor:'#021C36;',color:'white',marginTop:"30px"}}>
       <Container>
       <Grid container spacing={4}>
-  <Grid align="center" item xs={6} lg={3}>
+  <Grid sx={gridstyle} item xs={6} lg={3}>
   <Image
         src="/google.png" 
         alt="Description of the image"
@@ -24,14 +32,14 @@ export default function Footer() {
         height={80} 
       />
       </Grid>
-      <Grid align="center"item xs={6} lg={3}>
+      <Grid sx={gridstyle} item xs={6} lg={3}>
        <Image
         src="/BingCertified.png" 
         alt="Description of the image"
         width={200}
         height={60} 
       /></Grid>
-      <Grid align="center" item xs={6} lg={3}>
+      <Grid sx={gridstyle}  item xs={6} lg={3}>
        <Image
         src="/bbb.png" 
         alt="Description of the image"
@@ -39,7 +47,7 @@ export default function Footer() {
         height={90} 
       />
   </Grid>
-  <Grid align="center" item xs={6} lg={3}>
+  <Grid sx={gridstyle}  item xs={6} lg={3}>
   <Image
         src="/UPCITY.png" 
         alt="Description of the image"

@@ -2,11 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Box, Grid, Typography } from '@mui/material'
 
-import { useEffect } from 'react';
-const styleimage ={
-  opacity :'50%'
-}
 
+const gridstyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems:"center"
+
+ 
+
+};
 
 export default function Homepart0() {
   
@@ -25,7 +29,7 @@ We Love Website Design, SEO & PPC</Typography>
        
     </Box>
     <Grid container spacing={5} sx={{backgroundColor:'#021C36',zIndex:2, paddingY:"5%"}}>
-  <Grid data-aos="fade-right" align="center" item xs={4}md={2.4}>
+  <Grid data-aos="fade-right" sx={gridstyle} item xs={4}md={2.4}>
   <Image
         src="/2022-national.png" 
         alt="Description of the image"
@@ -35,7 +39,7 @@ We Love Website Design, SEO & PPC</Typography>
        
       />
   </Grid>
-  <Grid data-aos="fade-right" align="center" item xs={4} md={2.4}>
+  <Grid data-aos="fade-right" sx={gridstyle} item xs={4} md={2.4}>
   <Image
         src="/clutch_1000.png" 
         alt="Description of the image"
@@ -45,7 +49,7 @@ We Love Website Design, SEO & PPC</Typography>
        
       />
   </Grid>
-  <Grid align="center" item xs={4} md={2.4}>
+  <Grid sx={gridstyle} item xs={4} md={2.4}>
   <Image
         src="/v2-featured.png" 
         alt="Description of the image"
@@ -55,7 +59,7 @@ We Love Website Design, SEO & PPC</Typography>
        
       />
   </Grid>
-  <Grid data-aos="fade-left" align="center" item  xs={6} md={2.4}>
+  <Grid data-aos="fade-left" sx={gridstyle} item  xs={6} md={2.4}>
   <Image
         src="/clutch_veteran.png" 
         alt="Description of the image"
@@ -65,7 +69,7 @@ We Love Website Design, SEO & PPC</Typography>
        
       />
   </Grid>
-  <Grid data-aos="fade-left" align="center" item xs={6} md={2.4}>
+  <Grid data-aos="fade-left" sx={gridstyle} item xs={6} md={2.4}>
   <Image
         src="/tx_san-antonio.png" 
         alt="Description of the image"

@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+:root {
+    --orange: #ffa726; /* Set your primary color */
+    --darkbleu: #021C36; /* Set your secondary color */
+    /* Add more custom variables or global styles as needed */
+  }
+
+ 

@@ -12,11 +12,7 @@ const titele = {
 const gridstyle = {
   display: 'flex',
   justifyContent: 'center',
-  alignItems:"center"
-
- 
-
-};
+  alignItems:"center"};
 
 export default function Footer() {
   return (

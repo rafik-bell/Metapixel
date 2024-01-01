@@ -12,16 +12,16 @@ const gridstyle = {
 
 export default function Homepart1() {
   return (
-    <Container data-aos="fade-up" sx={{backgroundColor:'var(--darkbleu)', paddingY:"5%", color:'white'}}>
+    <Container data-aos="fade-up" sx={{backgroundColor:'var(--darkbleu)', paddingY:"5%", marginBottom:"100px", color:'white'}}>
         <Grid container spacing={2}>
   <Grid item  lg={5} >
     <Box sx={{paddingLeft:'40px'}}>
-        <Button variant='contained' sx={{backgroundColor:'var(--orange)',width:"300px",height:"75px"}}>SIMPLE PRICING</Button>
+        <Button  variant='contained' sx={{backgroundColor:'var(--orange)',width:"300px",height:"75px",fontSize:'large'}}>SIMPLE PRICING</Button>
         
 
-<Typography variant='h3'><span style={{color:"var(--orange)"}}> Internet Marketing </span> With Transparent Pricing</Typography>
-<Typography variant='h6'>We’re confident in our digital marketing services. If you have any questions or would like a service you don’t see listed, don’t hesitate to ask.</Typography>
-<Box sx={{textAlign:'center', minWidth:'100%', padding:'20px' ,border:'2px solid var(--orange)'}}>
+<Typography mb='20px' mt='20px' variant='h3'><span style={{color:"var(--orange)"}}> Internet Marketing </span> With Transparent Pricing</Typography>
+<Typography mb='20px'>We’re confident in our digital marketing services. If you have any questions or would like a service you don’t see listed, don’t hesitate to ask.</Typography>
+<Box sx={{textAlign:'center', padding:'20px' ,border:'2px solid var(--orange)'}}>
 <Typography variant='h5' color="var(--orange)">We Know Big And Small Business</Typography>
 
 <Typography >Since 2012, Funnel Boost Media has provided internet marketing services in San Antonio, TX. Through our demonstrated passion for measurable lead generation strategies, we’ve helped businesses across the country recognize search engines as one of their most valued marketing tools.</Typography>
@@ -33,8 +33,8 @@ export default function Homepart1() {
 <Image
         src="/shutterstock.png" 
         alt="Description of the image"
-        width={600}
-        height={600} 
+        width={500}
+        height={500} 
       />
    
   </Grid>

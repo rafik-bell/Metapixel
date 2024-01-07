@@ -4,41 +4,15 @@ import { AppBar, Box, Button, IconButton, Toolbar, Typography ,Link, Menu, MenuI
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import NavigationIcon from '@mui/icons-material/Navigation';
-const linkStyles = {
-  color:'black' ,
-  mr: 3,
-  fontSize: 18,
-  textDecoration:'none',
-  fontWeight: 600,
-
-  '&:hover': {
-    textDecoration: 'none',
-    color :'#ffa726',
-    
-    
-},
+import style from '../../styles/Navbar.module.css'
 
 
-};
-const linkStylesT = {
-  color:'black' ,
-  
-  fontSize: 18,
-  textDecoration:'none',
-  fontWeight: 600,
-
-  '&:hover': {
-    textDecoration: 'none',
-    color :'var(--Bright_Gray)',
-    
-    
-},
-};
 const linkStyles_in_menu = {
   color:'black' ,
   fontSize: 18 ,
   margin:'5px',
   textDecoration:'none',
+  fontFamily:'Sous-titre',
   '&:hover': {
     textDecoration:'none',
     color :'#ffa726',
@@ -78,7 +52,7 @@ export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
     <AppBar  sx={{ bgcolor:'white'}}>
-      <Toolbar sx={{ position:'sticky', justifyContent: 'space-between', alignItems:'center' ,marginTop:'10px'}}>
+      <Toolbar sx={{  position:'sticky', justifyContent: 'space-between', alignItems:'center' ,marginTop:'10px'}}>
       <Image
         src="/Logo PNG.png" 
         alt="Description of the image"
@@ -87,10 +61,10 @@ export default function Navbar() {
       />
         
         <Box sx={{display:{lg:'flex' , md :'none' ,xs :'none'}, flexDirection:'row', alignItems :'center' ,marginX:'2%' }}>
-        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Home</Typography></Link>
-        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Services</Typography></Link>
-        <Typography  onClick={handleClick1} sx={linkStyles}>Success story</Typography>
-        <Link href='\'  sx={linkStyles}><Typography sx={linkStylesT}>Join us</Typography></Link>
+        <Link href='\' className={style.link}><Typography className={style.linkT}>Home</Typography></Link>
+        <Link href='\' className={style.link}><Typography className={style.linkT}>Services</Typography></Link>
+        <Typography  onClick={handleClick1} className={style.link}>Success story</Typography>
+        <Link href='\' className={style.link}><Typography className={style.linkT}>Join us</Typography></Link>
         
 
         <Button variant='contained' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>
@@ -127,11 +101,11 @@ export default function Navbar() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}><Link href='\' sx={linkStyles_in_menu}>Home</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\' sx={linkStyles_in_menu}>About Us</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\'  sx={linkStyles_in_menu}>Marketing</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\'  sx={linkStyles_in_menu}>Branding</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\'  sx={linkStyles_in_menu}>Development</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='\' className={style.link_in_menu}>Home</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='\' className={style.link_in_menu}>About Us</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='\'  className={style.link_in_menu}>Marketing</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='\'  className={style.link_in_menu}>Branding</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='\'  className={style.link_in_menu}>Development</Link></MenuItem>
 
         <Button variant='contained' sx={{bgcolor:'#ffa726'}}>Login<NavigationIcon></NavigationIcon></Button>
       </Menu>

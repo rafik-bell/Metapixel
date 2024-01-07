@@ -1,0 +1,38 @@
+.link {
+    color: black;
+    margin-right: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Sous-titre', sans-serif;
+  }
+  
+  .link:hover {
+    text-decoration: none;
+    color: #ffa726;
+  }
+
+  .linkT {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Sous-titre', sans-serif;
+  }
+  
+  .linkT:hover {
+    text-decoration: none;
+    color: var(--Bright_Gray); /* Make sure to define the --Bright_Gray variable */
+  }
+  .link_in_menu {
+    color: black;
+    font-size: 18px;
+    margin: 5px;
+    text-decoration: none;
+    font-family: 'Sous-titre', sans-serif;
+  }
+  
+  .link_in_menu:hover {
+    text-decoration: none;
+    color: #ffa726;
+  }

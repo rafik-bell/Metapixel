@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Grid, Typography, createTheme } from '@mui/material'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -10,6 +10,7 @@ import Homepart2 from './Homepart2';
 const styleimage ={
   opacity :'50%'
 }
+
 
 
 export default function Homepqge() {
@@ -26,6 +27,7 @@ export default function Homepqge() {
       <Homepart0></Homepart0>
       <Homepart1></Homepart1>
       <Homepart2></Homepart2>
+      <Typography >ggggggggggg</Typography>
    
     </Box>
   )

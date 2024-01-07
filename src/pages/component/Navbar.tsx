@@ -90,8 +90,8 @@ export default function Navbar() {
       />
         
         <Box sx={{display:{lg:'flex' , md :'none' ,xs :'none'}, flexDirection:'row', alignItems :'center' ,marginX:'2%' }}>
-        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Home</Typography></Link>
-        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Services</Typography></Link>
+        <Link href='\' className={styles.link}><Typography className={styles.linkT}>Home</Typography></Link>
+        <Link href='\' className={styles.link}><Typography className={styles.linkT}>Services</Typography></Link>
         <Typography  onClick={handleClick1} sx={linkStyles}>Success story</Typography>
         <Link href='\'  sx={linkStyles}><Typography sx={linkStylesT}>Join us</Typography></Link>
         

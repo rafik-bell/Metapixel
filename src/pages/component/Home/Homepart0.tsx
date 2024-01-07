@@ -16,7 +16,7 @@ export default function Homepart0() {
   
   return (
     <Box sx={{marginY:'70px'}}>
-    <Box sx={{bgcolor:"#021C36",display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:'5%'}}>
+    <Box sx={{bgcolor:'var(--eminence)',display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:'5%'}}>
         <Image
         src="/head.png" 
         alt="Description of the image"
@@ -28,7 +28,7 @@ export default function Homepart0() {
 We Love Website Design, SEO & PPC</Typography>
        
     </Box>
-    <Grid container spacing={5} sx={{backgroundColor:'#021C36',zIndex:2, paddingY:"5%"}}>
+    <Grid container spacing={5} sx={{backgroundColor:'var(--eminence)',zIndex:2, paddingY:"5%" ,overflow:'hidden'}}>
   <Grid data-aos="fade-right" sx={gridstyle} item xs={4}md={2.4}>
   <Image
         src="/2022-national.png" 

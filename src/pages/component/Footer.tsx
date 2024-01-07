@@ -11,46 +11,24 @@ const titele = {
 };
 const gridstyle = {
   display: 'flex',
-  justifyContent: 'center',
+  justifyContent: 'start',
   alignItems:"center"};
 
 export default function Footer() {
   return (
     
-    <Box sx={{  minWidth:"100%",bgcolor:'#021C36;',color:'white',marginTop:"30px"}}>
+    <Box sx={{  minWidth:"100%",bgcolor:'var(--eminence)',color:'white',marginTop:"30px"}}>
       <Container>
-      <Grid container spacing={4}>
-  <Grid sx={gridstyle} item xs={6} lg={3}>
+      <Grid container spacing={1}>
+  <Grid sx={gridstyle} item  lg={12}>
   <Image
-        src="/google.png" 
+        src="/White PNG.png" 
         alt="Description of the image"
-        width={200}
-        height={80} 
+        width={340}
+        height={96} 
       />
       </Grid>
-      <Grid sx={gridstyle} item xs={6} lg={3}>
-       <Image
-        src="/BingCertified.png" 
-        alt="Description of the image"
-        width={200}
-        height={60} 
-      /></Grid>
-      <Grid sx={gridstyle}  item xs={6} lg={3}>
-       <Image
-        src="/bbb.png" 
-        alt="Description of the image"
-        width={220}
-        height={90} 
-      />
-  </Grid>
-  <Grid sx={gridstyle}  item xs={6} lg={3}>
-  <Image
-        src="/UPCITY.png" 
-        alt="Description of the image"
-        width={100}
-        height={100} 
-      />
-  </Grid>
+      
  
  
 </Grid>

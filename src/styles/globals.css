@@ -1,10 +1,27 @@
-body{
+@font-face {
+    font-family: 'Oxanium';
+    src: url('/public/fonts/Oxanium/static/Oxanium-Bold.ttf') format('truetype');
+    /* Other font formats and variations if needed */
+    font-weight: bold; /* Adjust weight as needed */
+    font-style: normal; /* Or italic if needed */
+  }
+
+
+
+  html,
+  body {
+    font-family: 'Oxanium', sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
 }
 :root {
     --orange: #ffa726; /* Set your primary color */
     --darkbleu: #021C36; /* Set your secondary color */
+    --eminence: #7A2A85 ;
+    --black : #000000 ;
+    --Dark_Charcoal:#333333;
+    --Bright_Gray:#EBEBEC;
+   
+
     /* Add more custom variables or global styles as needed */
   }
 

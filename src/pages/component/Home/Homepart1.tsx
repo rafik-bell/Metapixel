@@ -5,17 +5,14 @@ const gridstyle = {
   display: 'flex',
   justifyContent: 'center',
   alignItems:"center"
-
- 
-
 };
 
 export default function Homepart1() {
   return (
-    <Container data-aos="fade-up" sx={{backgroundColor:'var(--darkbleu)', paddingY:"5%", marginBottom:"100px", color:'white'}}>
+    <Container data-aos="fade-up" sx={{backgroundColor:'var(--eminence)', paddingY:"5%", marginBottom:"100px", color:'white'}}>
         <Grid container spacing={2}>
   <Grid item  lg={5} >
-    <Box sx={{paddingLeft:'40px'}}>
+    <Box sx={{paddingLeft:{md:'40px',sx:'0px'}}}>
         <Button  variant='contained' sx={{backgroundColor:'var(--orange)',width:"250px",height:"75px",fontSize:'large'}}>SIMPLE PRICING</Button>
         
 

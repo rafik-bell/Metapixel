@@ -29,7 +29,7 @@ const linkStylesT = {
 
   '&:hover': {
     textDecoration: 'none',
-    color :'#ffa726',
+    color :'var(--Bright_Gray)',
     
     
 },
@@ -78,22 +78,22 @@ export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
     <AppBar  sx={{ bgcolor:'white'}}>
-      <Toolbar sx={{ position:'sticky', justifyContent: 'space-between' ,marginY:'10px'}}>
+      <Toolbar sx={{ position:'sticky', justifyContent: 'space-between', alignItems:'center' ,marginTop:'10px'}}>
       <Image
-        src="/logo.png" 
+        src="/Logo PNG.png" 
         alt="Description of the image"
         width={170}
-        height={100} 
+        height={48} 
       />
         
         <Box sx={{display:{lg:'flex' , md :'none' ,xs :'none'}, flexDirection:'row', alignItems :'center' ,marginX:'2%' }}>
         <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Home</Typography></Link>
-        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>About Us</Typography></Link>
-        <Typography  onClick={handleClick1} sx={linkStyles}>Marketing</Typography>
-        <Link href='\'  sx={linkStyles}><Typography sx={linkStylesT}>Branding</Typography></Link>
-        <Typography  onClick={handleClick2} sx={linkStyles}>Development</Typography>
+        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Services</Typography></Link>
+        <Typography  onClick={handleClick1} sx={linkStyles}>Success story</Typography>
+        <Link href='\'  sx={linkStyles}><Typography sx={linkStylesT}>Join us</Typography></Link>
+        
 
-        <Button variant='contained' sx={{bgcolor:'#ffa726' }}>contact<NavigationIcon></NavigationIcon></Button>
+        <Button variant='contained' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>
         </Box>
 
 

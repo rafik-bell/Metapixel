@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Homepqge from './component/Home'
+import Homepqge from '../component/Home'
 
 
 export default function Home() {

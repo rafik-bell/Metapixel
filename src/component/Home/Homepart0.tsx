@@ -24,7 +24,7 @@ export default function Homepart0() {
         height={480} 
        
       />
-      <Typography fontWeight='700'  sx={{color:"white",textAlign:'center', fontSize:{xs:25,md:45},marginTop:{xs:'-50%',md:'-20%'},zIndex:1,minHeight:{xs:'200px',md:'0px'}}}>Award-Winning Digital Marketing Agency<br></br>
+      <Typography fontWeight='700' fontFamily='Titre'  sx={{color:"white",textAlign:'center', fontSize:{xs:25,md:45},marginTop:{xs:'-50%',md:'-20%'},zIndex:1,minHeight:{xs:'200px',md:'0px'}}}>Award-Winning Digital Marketing Agency<br></br>
 We Love Website Design, SEO & PPC</Typography>
        
     </Box>

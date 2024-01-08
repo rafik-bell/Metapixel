@@ -93,7 +93,7 @@ export default function Navbar() {
         <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Home</Typography></Link>
         <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Services</Typography></Link>
         <Typography  onClick={handleClick1} sx={linkStyles}>Success story</Typography>
-        <Link href='\'  sx={linkStyles}><Typography sx={linkStylesT}>Join us</Typography></Link>
+        
         
 
         <Button variant='contained' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>

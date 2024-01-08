@@ -27,7 +27,7 @@ export default function Homepqge() {
       <Homepart0></Homepart0>
       <Homepart1></Homepart1>
       <Homepart2></Homepart2>
-      <Typography >ggggggggggg</Typography>
+      
    
     </Box>
   )

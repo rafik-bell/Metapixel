@@ -83,7 +83,7 @@ export default function Navbar() {
     <AppBar  sx={{ bgcolor:'white'}}>
       <Toolbar sx={{  position:'sticky', justifyContent: 'space-between', alignItems:'center' ,marginTop:'10px'}}>
       <Image
-        src="/Logo PNG.png" 
+        src="/Black on white AI.png" 
         alt="Description of the image"
         width={170}
         height={48} 

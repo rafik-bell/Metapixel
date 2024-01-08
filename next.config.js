@@ -1,11 +1,6 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-  // Other Next.js configurations
+}
 
-  // Enable built-in CSS support
-  css: {
-    modules: true, // Enable CSS modules
-    // Other CSS-related configurations
-    // ...
-  },
-};
+module.exports = nextConfig

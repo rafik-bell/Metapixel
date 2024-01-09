@@ -44,7 +44,7 @@ const linkStyles_in_menu = {
   fontFamily:"Sous-titre",
   '&:hover': {
     textDecoration:'none',
-    color :'#ffa726',
+    color :'var(--Dark_Charcoal)',
     
     
 },
@@ -136,7 +136,7 @@ export default function Navbar() {
         <MenuItem onClick={handleClose}><Link href='\'  sx={linkStyles_in_menu}>Branding</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link href='\'  sx={linkStyles_in_menu}>Development</Link></MenuItem>
 
-        <Button variant='contained' sx={{bgcolor:'#ffa726'}}>Login<NavigationIcon></NavigationIcon></Button>
+        <Button variant='contained' sx={{bgcolor:'var(--eminence)' }}>Login<NavigationIcon></NavigationIcon></Button>
       </Menu>
 
 

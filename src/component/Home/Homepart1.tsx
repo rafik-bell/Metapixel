@@ -11,7 +11,7 @@ export default function Homepart1() {
   return (
     <Container data-aos="fade-up" sx={{backgroundColor:'var(--eminence)', paddingY:"5%", marginBottom:"100px", color:'white'}}>
         <Grid container spacing={2}>
-  <Grid item  lg={5} >
+  <Grid item  lg={6} >
     <Box sx={{paddingLeft:{md:'40px',sx:'0px'}}}>
         <Button  variant='contained'
          sx={{backgroundColor:'var(--orange)',
@@ -21,18 +21,18 @@ export default function Homepart1() {
         SIMPLE PRICING
         </Button>
       
-<Typography mb='20px' mt='20px' variant='h3' fontFamily='Titre'><span style={{color:"var(--orange)"}}> Internet Marketing </span> With Transparent Pricing</Typography>
-<Typography mb='20px' fontFamily='Text'>We’re confident in our digital marketing services. If you have any questions or would like a service you don’t see listed, don’t hesitate to ask.</Typography>
+<Typography mb='10px' mt='20px' variant='h4' fontFamily='Titre'><span style={{fontSize:50,color:"var(--orange)"}}> Meta Pixel </span>TECHNOLOGY & BEYOND</Typography>
+<Typography mb='20px' fontFamily='Text' textAlign='justify'>Meta Pixel est une agence Digitale algérienne pluridisciplinaire qui met à votre disposition son expertise et tout son savoir-faire dans le domaine du conseil en management et de l’expertise technologique. </Typography>
 <Box sx={{textAlign:'center',
 padding:'20px' ,
 border:'2px solid var(--orange)'}}>
 <Typography variant='h5' color="var(--orange)"  fontFamily='Sous-titre'>We Know Big And Small Business</Typography>
 
-<Typography  fontFamily='Text' >Since 2012, Funnel Boost Media has provided internet marketing services in San Antonio, TX. Through our demonstrated passion for measurable lead generation strategies, we’ve helped businesses across the country recognize search engines as one of their most valued marketing tools.</Typography>
+<Typography  fontFamily='Text'  textAlign='justify' >Since 2012, Funnel Boost Media has provided internet marketing services in San Antonio, TX. Through our demonstrated passion for measurable lead generation strategies, we’ve helped businesses across the country recognize search engines as one of their most valued marketing tools.</Typography>
 </Box>
 </Box>
 </Grid>
-<Grid item sx={gridstyle}  lg={7}>
+<Grid item sx={gridstyle}  lg={6}>
 
 <Image
         src="/shutterstock.png" 

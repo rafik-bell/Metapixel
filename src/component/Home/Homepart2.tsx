@@ -19,14 +19,14 @@ export default function Homepart2() {
         <Grid  data-aos="fade-up" container spacing={3}>
   <Grid item xs={12} md={4} >
     <Box sx={{width:'300px',marginY:'40px'}}>
-    <Typography  variant='h3' fontFamily='Titre'>Design.</Typography>
+    <Typography  variant='h4' fontFamily='Titre'>CONSEIL & GESTION.</Typography>
     <Typography fontFamily='Text'>Let us create a digital property your company will love. Be proud to share your site with customers. </Typography>
     <Button sx={bottonstyle}>Read More</Button>
     </Box>
   </Grid>
   <Grid item xs={12} md={4}>
     <Box sx={{width:'300px',marginY:'40px'}}>
-  <Typography fontFamily='Titre' variant='h3'>Rank.</Typography>
+  <Typography fontFamily='Titre' variant='h4'>CREATION & DEVELOPPEMENT.</Typography>
     <Typography fontFamily='Text'>We use 100% white-hat Google best SEO practices to rank your site at the top of the search engines. </Typography>
     <Button sx={bottonstyle}>Read More</Button>
     </Box>
@@ -34,7 +34,7 @@ export default function Homepart2() {
   </Grid>
   <Grid item xs={12} md={4}>
     <Box  sx={{width:'300px',marginY:'40px'}}>
-  <Typography fontFamily='Titre'  variant='h3'>Grow.</Typography>
+  <Typography fontFamily='Titre'  variant='h4'>ANALYSE & REPORTING.</Typography>
     <Typography fontFamily='Text'>Boost your leads and sales with a targeted pay-per-click campaign by digital marketing pros. </Typography>
     <Button sx={bottonstyle}>Read More</Button>
     </Box>

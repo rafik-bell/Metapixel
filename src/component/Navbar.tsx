@@ -64,19 +64,16 @@ export default function Navbar() {
 
 
   const [anchorEl1, setAnchorEl1] = useState(null);
-  const [anchorEl2, setAnchorEl2] = useState(null);
+ 
 
   const handleClick1 = (event:any) => {
     setAnchorEl1(event.currentTarget);
   };
 
-  const handleClick2 = (event:any) => {
-    setAnchorEl2(event.currentTarget);
-  };
 
   const handleClose1 = () => {
     setAnchorEl1(null);
-    setAnchorEl2(null);
+    
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -91,8 +88,9 @@ export default function Navbar() {
         
         <Box sx={{display:{lg:'flex' , md :'none' ,xs :'none'}, flexDirection:'row', alignItems :'center' ,marginX:'2%' }}>
         <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Home</Typography></Link>
-        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Services</Typography></Link>
-        <Typography  onClick={handleClick1} sx={linkStyles}>Success story</Typography>
+        <Typography  onClick={handleClick1} sx={linkStyles}>Services</Typography>
+        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Success story </Typography></Link>
+        
         
         
 
@@ -131,12 +129,11 @@ export default function Navbar() {
         }}
       >
         <MenuItem onClick={handleClose}><Link href='\' sx={linkStyles_in_menu}>Home</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\' sx={linkStyles_in_menu}>About Us</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\'  sx={linkStyles_in_menu}>Marketing</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\'  sx={linkStyles_in_menu}>Branding</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\'  sx={linkStyles_in_menu}>Development</Link></MenuItem>
+        <MenuItem ><Typography onClick={handleClick1}  sx={linkStyles_in_menu}>Services</Typography></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='\' sx={linkStyles_in_menu}>Success story </Link></MenuItem>
+        
 
-        <Button variant='contained' sx={{bgcolor:'var(--eminence)' }}>Login<NavigationIcon></NavigationIcon></Button>
+        <Button variant='contained' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>
       </Menu>
 
 
@@ -166,22 +163,11 @@ export default function Navbar() {
           'aria-labelledby': 'basic-button-1',
         }}
       >
-        <MenuItem onClick={handleClose}>Option 1</MenuItem>
-        <MenuItem onClick={handleClose}>Option 2</MenuItem>
-        <MenuItem onClick={handleClose}>Option 3</MenuItem>
+        <MenuItem onClick={handleClose}><Link onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_CONSEIL_GESTION'>CONSEIL & GESTION</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\'>CREATION & DEVELOPPEMENT</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\'>ANALYSE & REPORTING</Link></MenuItem>
       </Menu>
-      <Menu
-        anchorEl={anchorEl2}
-        open={Boolean(anchorEl2)}
-        onClose={handleClose1}
-        MenuListProps={{
-          'aria-labelledby': 'basic-button-2',
-        }}
-      >
-        <MenuItem onClick={handleClose}>Item 1</MenuItem>
-        <MenuItem onClick={handleClose}>Item 2</MenuItem>
-        <MenuItem onClick={handleClose}>Item 3</MenuItem>
-      </Menu>
+      
   </Box>
  
   )

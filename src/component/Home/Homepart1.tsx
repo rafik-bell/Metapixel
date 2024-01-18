@@ -26,9 +26,9 @@ export default function Homepart1() {
 <Box sx={{textAlign:'center',
 padding:'20px' ,
 border:'2px solid var(--orange)'}}>
-<Typography variant='h5' color="var(--orange)"  fontFamily='Sous-titre'>We Know Big And Small Business</Typography>
+<Typography variant='h5' color="var(--orange)"  fontFamily='Sous-titre'> Nous Approche Holistique</Typography>
 
-<Typography  fontFamily='Text'  textAlign='justify' >Since 2012, Funnel Boost Media has provided internet marketing services in San Antonio, TX. Through our demonstrated passion for measurable lead generation strategies, we’ve helped businesses across the country recognize search engines as one of their most valued marketing tools.</Typography>
+<Typography  fontFamily='Text'  textAlign='justify' >Notre approche holistique combine une compréhension approfondie des nouvelles technologies avec une vision stratégique susceptible de vous aider à tirer le meilleur parti de votre investissement numérique. Chez Meta Pixel, nous croyons fermement que le succès d'une entreprise dans l'écosystème économique national et mondial passe par la réussite de sa transformation numérique. </Typography>
 </Box>
 </Box>
 </Grid>

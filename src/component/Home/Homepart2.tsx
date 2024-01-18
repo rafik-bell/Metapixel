@@ -21,14 +21,14 @@ export default function Homepart2() {
     <Box sx={{width:'300px',marginY:'40px'}}>
     <Typography  variant='h4' fontFamily='Titre'>CONSEIL & GESTION.</Typography>
     <Typography fontFamily='Text'>Let us create a digital property your company will love. Be proud to share your site with customers. </Typography>
-    <Button sx={bottonstyle}>Read More</Button>
+    <Button href='\Service_CONSEIL_GESTION' sx={bottonstyle}>Read More</Button>
     </Box>
   </Grid>
   <Grid item xs={12} md={4}>
     <Box sx={{width:'300px',marginY:'40px'}}>
   <Typography fontFamily='Titre' variant='h4'>CREATION & DEVELOPPEMENT.</Typography>
     <Typography fontFamily='Text'>We use 100% white-hat Google best SEO practices to rank your site at the top of the search engines. </Typography>
-    <Button sx={bottonstyle}>Read More</Button>
+    <Button href='\Service_CREATION_DEVELOPPEMENT' sx={bottonstyle}>Read More</Button>
     </Box>
     
   </Grid>
@@ -36,7 +36,7 @@ export default function Homepart2() {
     <Box  sx={{width:'300px',marginY:'40px'}}>
   <Typography fontFamily='Titre'  variant='h4'>ANALYSE & REPORTING.</Typography>
     <Typography fontFamily='Text'>Boost your leads and sales with a targeted pay-per-click campaign by digital marketing pros. </Typography>
-    <Button sx={bottonstyle}>Read More</Button>
+    <Button href='\Service_ANALYSE_REPORTING' sx={bottonstyle}>Read More</Button>
     </Box>
     
   </Grid>

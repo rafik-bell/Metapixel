@@ -164,8 +164,8 @@ export default function Navbar() {
         }}
       >
         <MenuItem onClick={handleClose}><Link onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_CONSEIL_GESTION'>CONSEIL & GESTION</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\'>CREATION & DEVELOPPEMENT</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\'>ANALYSE & REPORTING</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_CREATION_DEVELOPPEMENT'>CREATION & DEVELOPPEMENT</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_ANALYSE_REPORTING'>ANALYSE & REPORTING</Link></MenuItem>
       </Menu>
       
   </Box>

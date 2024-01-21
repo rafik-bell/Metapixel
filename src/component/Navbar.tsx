@@ -89,7 +89,7 @@ export default function Navbar() {
         <Box sx={{display:{lg:'flex' , md :'none' ,xs :'none'}, flexDirection:'row', alignItems :'center' ,marginX:'2%' }}>
         <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Home</Typography></Link>
         <Typography  onClick={handleClick1} sx={linkStyles}>Services</Typography>
-        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Success story </Typography></Link>
+        <Link href='\Success_story' sx={linkStyles}><Typography sx={linkStylesT}>Success story </Typography></Link>
         
         
         
@@ -130,7 +130,7 @@ export default function Navbar() {
       >
         <MenuItem onClick={handleClose}><Link href='\' sx={linkStyles_in_menu}>Home</Link></MenuItem>
         <MenuItem ><Typography onClick={handleClick1}  sx={linkStyles_in_menu}>Services</Typography></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\' sx={linkStyles_in_menu}>Success story </Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href='\Success_story' sx={linkStyles_in_menu}>Success story </Link></MenuItem>
         
 
         <Button variant='contained' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>

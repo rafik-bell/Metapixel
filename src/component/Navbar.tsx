@@ -94,7 +94,7 @@ export default function Navbar() {
         
         
 
-        <Button variant='contained' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>
+        <Button variant='contained' href='/Login' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>
         </Box>
 
 
@@ -133,7 +133,7 @@ export default function Navbar() {
         <MenuItem onClick={handleClose}><Link href='\Success_story' sx={linkStyles_in_menu}>Success story </Link></MenuItem>
         
 
-        <Button variant='contained' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>
+        <Button variant='contained' href='/Login' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>
       </Menu>
 
 

@@ -1,6 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material'
 import Image from 'next/image';
 import React from 'react'
+
 const titelstyle = { 
     borderLeft:'10px solid var(--eminence)',
     paddingLeft:'15px',
@@ -60,7 +61,7 @@ release of Letraset sheets containing Lorem Ipsum
         
     
     </Grid>
-    <Grid item xs={12} md={8} sx={secndgrid}>
+    <Grid data-aos="fade-down" item xs={12} md={8} sx={secndgrid}>
     
     <Typography  fontFamily='Titre' variant='h5' >Titel of Success {step}</Typography>
     <Typography   fontFamily='Text' textAlign='justify'>

@@ -21,7 +21,7 @@ export default function Ar_part1() {
     <Box  sx={{marginY:'100px'}}>
         <Typography data-aos="fade-down" variant='h3' sx={titelstyle} fontFamily='Titre' >Services</Typography>
 
-        <Typography data-aos="fade-down" variant='h4' color='var(--eminence)' fontFamily='Sous-titre'>ANALYSE & REPORTING</Typography>
+        <Typography data-aos="fade-down" variant='h4' color='var(--eminence)' fontFamily='Sous-titre'>POLE DIGITAL & INFLUENCE</Typography>
         <Typography   fontFamily='Text' textAlign='justify'>Meta Pixel's "ANALYSE & REPORTING" services offer in-depth insights into your digital presence. We employ advanced analytics tools to dissect data, providing a clear understanding of user behavior, market trends, and performance metrics. Our strategic reporting enables informed decision-making, empowering you to optimize strategies for maximum impact. From comprehensive analytics to actionable reports, we help you stay ahead in the dynamic digital landscape. Trust Meta Pixel to unravel the intricacies of your online performance, guiding you towards data-driven decisions that enhance your digital footprint and contribute to sustained growth.</Typography>
         <Typography  variant='h4' sx={titelstyle} fontFamily='Titre' >ANALYSE</Typography>
         <Grid  data-aos="fade-up" container spacing={2}>

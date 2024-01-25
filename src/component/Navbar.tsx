@@ -163,9 +163,9 @@ export default function Navbar() {
           'aria-labelledby': 'basic-button-1',
         }}
       >
-        <MenuItem onClick={handleClose}><Link onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_CONSEIL_GESTION'>CONSEIL & GESTION</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_CREATION_DEVELOPPEMENT'>CREATION & DEVELOPPEMENT</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_ANALYSE_REPORTING'>ANALYSE & REPORTING</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_CONSEIL_GESTION'>POLE TECHNOLOGY</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_CREATION_DEVELOPPEMENT'>POLE CRÉA & CONSEIL</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link  onClick={handleClose1}  sx={linkStyles_in_menu} href='\Service_ANALYSE_REPORTING'>POLE DIGITAL & INFLUENCE</Link></MenuItem>
       </Menu>
       
   </Box>

@@ -1,4 +1,4 @@
-
+ 
 import Image from 'next/image'
 import Homepart0 from '@/component/Home/Homepart0'
 import Homepart1 from '@/component/Home/Homepart1'

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Button, Grid, Typography } from '@mui/material'
 
 
 const gridstyle = {
@@ -11,75 +11,42 @@ const gridstyle = {
  
 
 };
+const buttonstyle ={
+  color:'var(--Bright_Gray)',
+  fontSize: 15,
+  fontWeight: 500,
+  bgcolor:'var(--eminence)',
+  padding:'25px',
+  marginY:{xs:"10px",md:"80px"},
+  borderRadius:"20px",
+  '&:hover': {
+  bgcolor:'var(--Bright_Gray)',
+  textDecoration:'none',
+  color :'var(--eminence)',
+}
+   
+
+}
 
 export default function Homepart0() {
   
   return (
-    <Box sx={{marginY:'70px'}}>
-    <Box sx={{bgcolor:'var(--eminence)',display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:'5%'}}>
+    <Box sx={{backgroundImage: "url('/650 350.png')",backgroundSize: 'cover',backgroundPosition: 'center',}}>
+    <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:{xs:'50%',md:'3%'},paddingTop:{xs:'0%',md:'17%'}}}>
         <Image
-        src="/head.png" 
+        src="/White PNG.png" 
         alt="Description of the image"
-        width={400}
-        height={480} 
+        width={408}
+        height={115}
        
       />
-      <Typography fontWeight='700' fontFamily='Titre'  sx={{color:"white",textAlign:'center', fontSize:{xs:25,md:45},marginTop:{xs:'-50%',md:'-20%'},zIndex:1,minHeight:{xs:'200px',md:'0px'}}}>Award-Winning Meta Pixel<br></br>
-We Love Website Design, SEO & PPC</Typography>
+      
+
+      <Typography  fontFamily='Text'  sx={{color:"white",textAlign:'center', fontSize:{xs:40,md:70},minHeight:{xs:'200px',md:'0px'}}}>Technology & Beyond<br></br></Typography>
+      <Button variant='contained'  sx={buttonstyle}>En savoir plus</Button>
        
     </Box>
-    <Grid container spacing={5} sx={{backgroundColor:'var(--eminence)',zIndex:2, paddingY:"5%" ,overflow:'hidden'}}>
-  <Grid data-aos="fade-right" sx={gridstyle} item xs={4}md={2.4}>
-  <Image
-        src="/2022-national.png" 
-        alt="Description of the image"
-        width={120}
-        height={120} 
-        style={{opacity:"70%"}}
-       
-      />
-  </Grid>
-  <Grid data-aos="fade-right" sx={gridstyle} item xs={4} md={2.4}>
-  <Image
-        src="/clutch_1000.png" 
-        alt="Description of the image"
-        width={120}
-        height={120} 
-        style={{opacity:"70%"}}
-       
-      />
-  </Grid>
-  <Grid sx={gridstyle} item xs={4} md={2.4}>
-  <Image
-        src="/v2-featured.png" 
-        alt="Description of the image"
-        width={150}
-        height={150} 
-        style={{opacity:"70%"}}
-       
-      />
-  </Grid>
-  <Grid data-aos="fade-left" sx={gridstyle} item  xs={6} md={2.4}>
-  <Image
-        src="/clutch_veteran.png" 
-        alt="Description of the image"
-        width={120}
-        height={120} 
-        style={{opacity:"70%"}}
-       
-      />
-  </Grid>
-  <Grid data-aos="fade-left" sx={gridstyle} item xs={6} md={2.4}>
-  <Image
-        src="/tx_san-antonio.png" 
-        alt="Description of the image"
-        width={120}
-        height={120} 
-        style={{opacity:"70%"}}
-       
-      />
-  </Grid>
-</Grid>
+   
     </Box>
   )
 }

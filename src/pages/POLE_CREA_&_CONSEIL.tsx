@@ -1,4 +1,4 @@
-import Cd_part1 from '@/component/Services/POLE CRÉA & CONSEIL/cd_part1'
+import Cd_part1 from '../component/Services/POLE_CREA_&_CONSEIL/cd_part1'
 import { Container } from '@mui/material'
 import React from 'react'
 

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Box, Button, Container, Grid, Typography } from '@mui/material'
+import { Box, Button, Container, Grid, Paper, Typography } from '@mui/material'
 const bottonstyle ={
     border:'2px solid black',
     color:"black",
@@ -11,39 +11,58 @@ const bottonstyle ={
 
 
 }
+const paperStyle = {
+  padding: '30px',
+  
+  height:'220px',
+  
+  transition: 'box-shadow 0.3s', // Add a smooth transition for the box-shadow
+  '&:hover': {
+    boxShadow: '0 4px 8px var(--eminence)',
+  },
+};
+const boxstyle={
+  justifyContent: 'center',
+  display: 'flex', 
+  alignItems: 'center',
+  flexDirection:'column',
+  my:'30px'
+ 
+}
+
 
 
 export default function Homepart2() {
+  const tecnoItem = [
+    {discription:"Agilité"},
+    {discription:"Innovation"},
+    {discription:"Proximité"},
+    {discription:"Engagement"},
+    {discription:"Transparence"},
+    
+  ]
   return (
-    <Container sx={{mb:"80px"}}>
+    <Box  sx={{ bgcolor:'var(--Bright_Gray)',}}>
+       <Container sx={{py:'30px',textAlign:'center'}}>
+        <Typography data-aos="fade-down" sx={{marginBottom:'30px',}} variant='h5' fontFamily='Titre' >NOTRE PHILOSOPHIE</Typography>
+
+        <Typography data-aos="fade-down"  textAlign='justify' variant='h6' color='var(--black)' fontFamily='Sous-titre'>Nous aspirons à être un acteur majeur dans le processus de transformation numérique en Algérie et cela en accompagnant activement la transition Digitale des entreprises algériennes <br></br>
+Nous nous engageons à offrir à nos partenaires les outils technologiques, l’expertise et l'accompagnement nécessaires à la réussite de leur transformation numérique. 
+</Typography>
+          </Container>
         <Grid  data-aos="fade-up" container spacing={3}>
+        {tecnoItem.map((item, index) => (
   <Grid item xs={12} md={4} >
     <Box sx={{width:'300px',marginY:'40px'}}>
-    <Typography  variant='h4' fontFamily='Titre'>CONSEIL & GESTION.</Typography>
-    <Typography fontFamily='Text'>Let us create a digital property your company will love. Be proud to share your site with customers. </Typography>
-    <Button href='\Service_CONSEIL_GESTION' sx={bottonstyle}>Read More</Button>
+    <Box sx={boxstyle}>
+       <Typography  variant='h5' color='var(--eminence)' fontFamily='Titre'>{item.discription}</Typography>
+       </Box>
     </Box>
   </Grid>
-  <Grid item xs={12} md={4}>
-    <Box sx={{width:'300px',marginY:'40px'}}>
-  <Typography fontFamily='Titre' variant='h4'>CREATION & DEVELOPPEMENT.</Typography>
-    <Typography fontFamily='Text'>We use 100% white-hat Google best SEO practices to rank your site at the top of the search engines. </Typography>
-    <Button href='\Service_CREATION_DEVELOPPEMENT' sx={bottonstyle}>Read More</Button>
-    </Box>
-    
-  </Grid>
-  <Grid item xs={12} md={4}>
-    <Box  sx={{width:'300px',marginY:'40px'}}>
-  <Typography fontFamily='Titre'  variant='h4'>ANALYSE & REPORTING.</Typography>
-    <Typography fontFamily='Text'>Boost your leads and sales with a targeted pay-per-click campaign by digital marketing pros. </Typography>
-    <Button href='\Service_ANALYSE_REPORTING' sx={bottonstyle}>Read More</Button>
-    </Box>
-    
-  </Grid>
-  
+   ))}
 </Grid>
      
-    </Container>
+    </Box>
  
   )
 }

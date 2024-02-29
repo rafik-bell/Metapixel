@@ -4,9 +4,9 @@ import { AppBar, Box, Button, IconButton, Toolbar, Typography ,Link, Menu, MenuI
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import NavigationIcon from '@mui/icons-material/Navigation';
-import styles from '@/styles/Navbar.module.css'
+
 const linkStyles = {
-  color:'black' ,
+  color:'var(--eminence)' ,
   mr: 3,
   fontSize: 18,
   textDecoration:'none',
@@ -14,7 +14,7 @@ const linkStyles = {
   fontFamily:"Sous-titre",
   '&:hover': {
     textDecoration: 'none',
-    color :'#ffa726',
+   
     
     
 },
@@ -22,7 +22,7 @@ const linkStyles = {
 
 };
 const linkStylesT = {
-  color:'black' ,
+  color:'var(--eminence)',
   
   fontSize: 18,
   textDecoration:'none',
@@ -31,7 +31,7 @@ const linkStylesT = {
 
   '&:hover': {
     textDecoration: 'none',
-    color :'var(--Bright_Gray)',
+   
     
     
 },
@@ -77,7 +77,7 @@ export default function Navbar() {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
-    <AppBar  sx={{ bgcolor:'white'}}>
+    <AppBar  sx={{ bgcolor:'var(--Bright_Gray)'}}>
       <Toolbar sx={{  position:'sticky', justifyContent: 'space-between', alignItems:'center' ,marginTop:'10px'}}>
       <Image
         src="/Black on white AI.png" 
@@ -87,14 +87,14 @@ export default function Navbar() {
       />
         
         <Box sx={{display:{lg:'flex' , md :'none' ,xs :'none'}, flexDirection:'row', alignItems :'center' ,marginX:'2%' }}>
-        <Link href='\' sx={linkStyles}><Typography sx={linkStylesT}>Home</Typography></Link>
-        <Typography  onClick={handleClick1} sx={linkStyles}>Services</Typography>
-        <Link href='\Success_story' sx={linkStyles}><Typography sx={linkStylesT}>Success story </Typography></Link>
+        <Link href="/#section1" sx={linkStyles}><Typography sx={linkStylesT}>Qui sommes-nous</Typography></Link>
+        <Link href='/#section2' sx={linkStyles}><Typography sx={linkStylesT}>Expertise</Typography></Link>
+        <Link href='/#section3' sx={linkStyles}><Typography sx={linkStylesT}>Philosophie</Typography></Link>
         
         
         
 
-        <Button variant='contained' href='/Login' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>
+        <Button variant='contained' href='/#section4' sx={{color:'var(--eminence)',fontSize: 15,fontWeight: 600,bgcolor:'var(--Bright_Gray)', '&:hover': {bgcolor:'var(--eminence)',color :'var(--Bright_Gray)',}, }}>Contactez-nous<NavigationIcon></NavigationIcon></Button>
         </Box>
 
 
@@ -124,16 +124,17 @@ export default function Navbar() {
         open={open}
         onClose={handleClose}
         MenuListProps={{
-          style: { display: 'flex', flexDirection: 'column', alignItems: 'center' },
+          style: { display: 'flex', flexDirection: 'column', alignItems: 'center',padding:'5px' },
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}><Link href='\' sx={linkStyles_in_menu}>Home</Link></MenuItem>
-        <MenuItem ><Typography onClick={handleClick1}  sx={linkStyles_in_menu}>Services</Typography></MenuItem>
-        <MenuItem onClick={handleClose}><Link href='\Success_story' sx={linkStyles_in_menu}>Success story </Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/#section1" sx={linkStyles_in_menu}>Qui sommes-nous</Link></MenuItem>
+        {/* <MenuItem ><Typography onClick={handleClick1}  sx={linkStyles_in_menu}>Expertise</Typography></MenuItem> */}
+        <MenuItem onClick={handleClose}><Link href="/#section2" sx={linkStyles_in_menu}>Expertise</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link href="/#section3" sx={linkStyles_in_menu}>Philosophie</Link></MenuItem>
         
 
-        <Button variant='contained' href='/Login' sx={{bgcolor:'var(--eminence)' }}>Join us<NavigationIcon></NavigationIcon></Button>
+        <Button variant='contained' href='/#section4' sx={{color:'var(--eminence)',fontSize: 15,fontWeight: 600,bgcolor:'var(--Bright_Gray)', '&:hover': {bgcolor:'var(--eminence)',color :'var(--Bright_Gray)',}, }}>Contactez-nous<NavigationIcon></NavigationIcon></Button>
       </Menu>
 
 

@@ -25,12 +25,12 @@ const titelstyle = {
 
 export default function Part1() {
   const tecnoItem = [
-    {image:"Développement Technique.png",discription:"Développement Technique"},
+    {image:"Developpement Technique.png",discription:"Développement Technique"},
     {image:"Gestion de Projet.png",discription:"Gestion de Projet"},
     {image:"Conseils & Audit.png",discription:"Conseils & Audit"},
-    {image:"Installation Réseaux & Systèmes.png",discription:"Installation Réseaux & Systèmes"},
+    {image:"Installation Reseaux & Systemes.png",discription:"Installation Réseaux & Systèmes"},
     {image:"Formation.png",discription:"Formation"},
-    {image:"Hébergement & Infogérance.png",discription:"Hébergement & Infogérance"}
+    {image:"Hebergement & Infogerance.png",discription:"Hébergement & Infogérance"}
   ]
   return (
     <Box  sx={{marginY:'100px'}}>

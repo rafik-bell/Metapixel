@@ -1,4 +1,4 @@
-import Ss_part1 from '@/component/Success story/Ss_part1'
+import Ss_part1 from '../component/Success story/Ss_part1'
 import { Container } from '@mui/material'
 import React from 'react'
 

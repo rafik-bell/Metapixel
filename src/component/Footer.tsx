@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Box, Container, Grid, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography,Link } from '@mui/material'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+
 const titele = {
   marginY: 3,
   fontSize: 25,
@@ -13,12 +17,14 @@ const titele = {
 const gridstyle = {
   display: 'flex',
   justifyContent: 'start',
-  alignItems:"center"};
+  alignItems:"center",
+  marginY: 1,
+};
 
 export default function Footer() {
   return (
     
-    <Box sx={{  minWidth:"100%",bgcolor:'var(--eminence)',color:'white',marginTop:"30px"}}>
+    <Box sx={{  minWidth:"100%",bgcolor:'var(--black)',color:'white'}}>
       <Container>
       <Grid container spacing={1}>
   <Grid sx={gridstyle} item  lg={12}>
@@ -34,41 +40,37 @@ export default function Footer() {
  
 </Grid>
         
-<Grid container spacing={3}>
+<Grid container spacing={3} >
   <Grid item xs={12} md={6} lg={4}>
-  <Typography  sx= {{ ...titele, ...{ color: '#ffa726' } }}>Funnel Boost Media</Typography>
-  <Typography fontFamily='Text' sx={{marginY: 3}}>3201 Cherry Ridge, Suite 328<br></br>
-      San Antonio, Tx 78230<br></br>
-     <span style={{color:'#ffa726'}}>(210) 503-8024<br></br></span> 
-      8am-6pm Everyday
+  <Typography  sx= {{ ...titele, ...{ color:"var(--eminence)" } }}>MetaPixel</Typography>
+  <Typography fontFamily='Text' sx={{marginY: 3, color:"var(--eminence)"}}>contactez<br></br>
+  Expertise de confidentialité
+<br></br>
+Nôtre Philosophie<br></br>
+Note philosophie<br></br>
+<br></br>
+
 </Typography>
-<Image
-        src="/googled.png" 
-        alt="Description of the image"
-        width={200}
-        height={80} 
-      />
+
    
   </Grid>
   <Grid item xs={12} md={6} lg={4}>
-  <Typography sx={titele}>Digital Marketing Services</Typography>
-  <Typography  fontFamily='Text' sx={{color:'#ffa726'}}>Local SEO<br></br>
-National SEO Services<br></br>
-PPC & Search Marketing<br></br>
-Website Design & Development<br></br>
-News & Blog
+  <Typography sx= {{ ...titele, ...{ color:"var(--eminence)" } }}>Services</Typography>
+  <Typography  fontFamily='Text' sx={{color:"var(--eminence)"}}>
+  <Box sx={gridstyle}><Link sx={{ textDecoration:'none',color:"var(--eminence)"}} href='\POLE_TECHNOLOGY' >POLE TECHNOLOGY</Link> <br></br></Box> 
+  <Box sx={gridstyle}><Link sx={{ textDecoration:'none',color:"var(--eminence)"}}  href='\POLE_CREA_&_CONSEIL' >Pole Créa & Conseil</Link> <br></br></Box> 
+  <Box sx={gridstyle}><Link sx={{ textDecoration:'none',color:"var(--eminence)"}}  href='\POLE_DIGITAL_&_INFLUENCE'>Pole Digital & Influence</Link> <br></br></Box> 
+
 </Typography>
    
   </Grid>
   <Grid item xs={12} md={6} lg={4}>
-  <Typography sx={titele}>Resources</Typography>
-  <Typography  fontFamily='Text' sx={{color:'#ffa726'}}>Privacy <br></br>
-Terms of Service<br></br>
-Contract Terms & Conditions<br></br>
-Areas Of Coverage<br></br>
-Careers<br></br>
-Job Interview Phishing Scam Notice<br></br>
-Sitemap
+  <Typography sx= {{ ...titele, ...{ color:"var(--eminence)" } }}>Nous</Typography>
+  <Typography  fontFamily='Text' sx={{color:"var(--eminence)" }}> Politique  <br></br>
+ <Box sx={gridstyle}><LinkedInIcon/><Link sx={{ textDecoration:'none',color:"var(--eminence)"}} href='https://www.linkedin.com/company/meta-pixel-algeria/' target="_blank">Linkedin</Link> <br></br></Box> 
+ <Box  sx={gridstyle}><FacebookIcon/><Link sx={{ textDecoration:'none',color:"var(--eminence)"}} href='https://www.facebook.com/MetaPixelDZ' target="_blank">Facebook </Link><br></br></Box>
+ <Box sx={gridstyle}><LocalPhoneIcon/>+213 770 11 70 03<br></br></Box> 
+
 </Typography>
     
   </Grid>

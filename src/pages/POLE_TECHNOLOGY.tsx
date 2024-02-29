@@ -1,4 +1,4 @@
-import Part1 from '@/component/Services/POLE_TECHNOLOGY/part1'
+import Part1 from '../component/Services/POLE_TECHNOLOGY/part1'
 import { Container, Typography } from '@mui/material'
 import React from 'react'
 

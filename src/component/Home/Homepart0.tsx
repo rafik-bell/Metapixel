@@ -38,6 +38,7 @@ export default function Homepart0() {
         alt="Description of the image"
         width={408}
         height={115}
+        data-aos="fade-down"
        
       />
       

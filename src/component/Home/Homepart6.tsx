@@ -50,6 +50,7 @@ const boxstyle={
   transition: 'box-shadow 0.3s', // Add a smooth transition for the box-shadow
   boxShadow: '0 2px 4px var(--eminence)',
   '&:hover': {
+    transform:' scale(1.1,1.1)',
     boxShadow: '10px 10px 20px var(--eminence)',
     
   },

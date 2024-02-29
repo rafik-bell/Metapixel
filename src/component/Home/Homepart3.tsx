@@ -43,15 +43,16 @@ const bottonstyle ={
 const paperStyle = {
   padding: '30px',
   borderRadius:'30%',
-  border: '7px solid #ce93d8',
+  
   justifyContent: 'center',
   display: 'flex', 
   alignItems: 'center',
-  bgcolor:'var(--Bright_Gray)',
+  bgcolor:'white',
   height:'220px',
   transition: 'box-shadow 0.3s',
   '&:hover': {
-    boxShadow: '10px 10px 8px var(--Bright_Gray)',
+    transform:' scale(1.1,1.1)',
+    boxShadow: '0px 4px 8px var(--Bright_Gray)',
   },
 };
 

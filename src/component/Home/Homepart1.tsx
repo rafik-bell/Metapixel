@@ -9,7 +9,7 @@ const gridstyle = {
 
 export default function Homepart1() {
   return (
-    <Box data-aos="fade-up" sx={{backgroundColor:'var(--Bright_Gray)', paddingY:"5%", color:'white'}}>
+    <Box data-aos="fade-up" sx={{backgroundColor:'var(--Bright_Gray)', paddingY:"5%", paddingX:"20px", color:'white'}}>
         <Grid container spacing={2}>
   <Grid item  lg={6} >
     <Box sx={{paddingLeft:{md:'40px',sx:'0px'}}}>

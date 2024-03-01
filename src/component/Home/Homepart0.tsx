@@ -32,9 +32,9 @@ export default function Homepart0() {
   
   return (
     <Box sx={{backgroundImage: "url('/650 350.png')",backgroundSize: 'cover',backgroundPosition: 'center'}}>
-    <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:{xs:'50%',md:'3%'},paddingTop:{xs:'50%',md:'17%'}}}>
+    <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:{xs:'50%',md:'3%'},paddingTop:{xs:'50%',md:'17%'},px:{xs:'20px',md:'0px'}}}>
         <Image
-        src="/White PNG.png" 
+        src="/White PNG 1.png" 
         alt="Description of the image"
         width={408}
         height={115}

@@ -33,17 +33,17 @@ export default function Part1() {
     {image:"Hebergement & Infogerance.png",discription:"Hébergement & Infogérance"}
   ]
   return (
-    <Box  sx={{marginY:'100px'}}>
+    <Box  sx={{ px:{xs:'10px',md:'0px'},marginY:'100px'}}>
       <Box sx={{marginY:'30px'}}>
         <Typography data-aos="fade-down" variant='h3' sx={titelstyle} fontFamily='Titre' >Services</Typography>
 
-        <Typography data-aos="fade-down" variant='h4' color='var(--eminence)' fontFamily='Sous-titre'>POLE TECHNOLOGY</Typography>
-        <Typography   fontFamily='Text' textAlign='justify'>Nous vous offrons les moyens de réussir votre transition numérique en toute sécurité </Typography>
-        <Typography  fontFamily='Text' textAlign='justify'>Nos équipes d'experts vous accompagnent dans vos projets  en mettant à votre disposition leur expertise technique  et toutes  les solutions  et outils technologiques nécessaires à la mise en place de systèmes d’information modernes ,intelligents et performants. 
-          Nos équipes d'experts s'engagent à être vos interlocuteurs uniques sur tous les volets de vos projets  IT : 
-          <Typography fontFamily='Sous-titre' >Audit et Diagnostic , Project Managment ,Développement , Acquisition de Licences, Intégration, Infrastructure, Support et Maintenance, et bien plus encore.</Typography>
-          Nous avons les profils  qu'ils vous faut et la formule qui convient à vos besoins :
-          <Typography fontFamily='Sous-titre' >- Mode Full Intégration <br></br>
+        <Typography data-aos="fade-down" variant='h4' color='var(--eminence)' fontFamily='Sous-titre'>POLE TECHNOLOGY</Typography>
+        <Typography   fontFamily='Text' textAlign='justify'>Nous vouso ffrons les moyens de réussir votre transition numérique en toute sécurité </Typography>
+        <Typography  fontFamily='Text' textAlign='justify'>Nos équipes d'experts vous accompagnent dans vos projets  en mettant à votre disposition leur expertise technique  et toutes les solutions  et outils technologiques nécessaires à la mise en place de systèmes d’information modernes ,intelligents et performants. 
+          Nos équipes d'experts s'engagent à être vos interlocuteurs uniques sur tous les volets de vos projets  IT : 
+          <Typography fontFamily='Sous-titre' sx={{textAlign: {xs: 'left',md:'justify'}}}>Audit et Diagnostic , Project Managment ,Développement , Acquisition de Licences, Intégration, Infrastructure, Support et Maintenance, et bien plus encore.</Typography>
+          Nous avons les profils  qu'ils vous faut et la formule qui convient à vos besoins :
+          <Typography fontFamily='Sous-titre' >- Mode Full Intégration <br></br>
           - Mode Projet<br></br>
           - Mode Assistance</Typography></Typography>
           </Box>

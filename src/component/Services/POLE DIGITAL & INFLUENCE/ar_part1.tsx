@@ -60,7 +60,7 @@ export default function Ar_part1() {
     
   ]
   return (
-    <Box  sx={{marginY:'100px'}}>
+    <Box  sx={{ px:{xs:'10px',md:'0px'},marginY:'100px'}}>
         <Typography data-aos="fade-down" variant='h3' sx={titelstyle} fontFamily='Titre' >Services</Typography>
 
         <Typography data-aos="fade-down" variant='h4' color='var(--eminence)' fontFamily='Sous-titre'>POLE DIGITAL & INFLUENCE</Typography>

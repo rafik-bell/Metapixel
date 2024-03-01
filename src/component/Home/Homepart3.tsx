@@ -81,8 +81,8 @@ export default function Homepart3() {
   ];
 
   return (
-    <Box sx={{backgroundImage: "url('/650 350.png')",backgroundSize: 'cover',backgroundPosition: 'center',minHeight:'90vh'}}>
-      <Box sx={{marginY:'10px',textAlign:'center'}}>
+    <Box sx={{backgroundImage: "url('/650 350.png')",backgroundSize: 'cover',backgroundPosition: 'center',minHeight:'90vh', paddingX:"20px"}}>
+      <Box sx={{marginY:'10px',textAlign:{xs:'left',md:'center'}}}>
         <Typography data-aos="fade-down" color='var(--Bright_Gray)' variant='h5' fontFamily='Titre' >NOS DOMAINES D'EXPERTISE</Typography>
         <Typography variant='h6' color='var(--Bright_Gray)' fontFamily='Text'>Meta Pixel c'est l’alliance entre technologie , créativité et savoir-faire, nous mettons toute notre expertise , en transformation digitale notamment, au service de la croissance et du développement pérenne de nos partenaires</Typography>
         <Typography variant='h6' color='var(--Bright_Gray)'  fontFamily='Titre'>Meta Pixel c'est trois pôles d'expertise qui travaillent en synergie pour vous </Typography>

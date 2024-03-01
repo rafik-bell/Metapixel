@@ -1,7 +1,21 @@
-import { Box, Grid, Paper, Typography } from '@mui/material'
+import { Box, Grid, Modal, Paper, Typography } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image';
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: {xs:'60%',md:500},
+  bgcolor:'var(--Bright_Gray)',
+  border: '5px solid var(--eminence)',
+  boxShadow: 24,
+  p:'40px',
+  borderRadius:'30px',
+  display: 'flex', 
+  flexDirection:'column',
+};
 const titelstyle = { 
     borderLeft:'10px solid var(--eminence)',
     paddingLeft:'15px',
@@ -11,6 +25,7 @@ const titelstyle = {
   const paperStyle = {
     padding: '30px',
     my: '30px',
+    minHeight:'150px',
     transition: 'box-shadow 0.3s', // Add a smooth transition for the box-shadow
     '&:hover': {
       boxShadow: '0 4px 8px var(--eminence)',
@@ -24,6 +39,17 @@ const titelstyle = {
   }
 
 export default function Ar_part1() {
+  const [open, setOpen] = useState(false);
+  const [obj, setObj] = useState<string[] | undefined>(); // Adjusting the type of obj
+  const [obj1, setObj1] = useState<string | undefined>(); // Adjusting the type of obj
+
+  const handleOpen1 = (index: any,index1:string) => {
+    setOpen(true);
+    setObj(index);
+    setObj1(index1);
+  };
+
+  const handleClose = () => setOpen(false);
 
 
   const tecnoItem = [
@@ -52,31 +78,46 @@ Nous mettons aussi à votre disposition un écosystème d'influence digital et�
         <Grid  data-aos="fade-up" container spacing={2}>
         {tecnoItem.map((item, index) => (
         <Grid item xs={12} md={6}>
-            <Paper elevation={3}  sx={paperStyle}>
+            <Paper elevation={3}  sx={paperStyle} onClick={() => handleOpen1(item.item,item.discription)}>
               <Box sx={boxstyle}>
               {item.image.map((subItem, subIndex) => (
                       <Image
                 src={`/DIGITAL/${subItem}.png`}
                 alt="Description of the image"
-                width={50}
-                height={50} 
+                width={70}
+                height={70} 
                 objectFit='contain'
+                
                 
               />
               ))}
               </Box>
-            <Typography variant='h5' color='var(--eminence)' fontFamily='Titre'>{item.discription}</Typography>
-            {item.item.map((subItem, subIndex) => (
-            <Typography  fontFamily='Text' key={subIndex} textAlign='left' ><ArrowForwardIosIcon fontSize='small'/>{subItem}</Typography>
-            ))}
+            <Typography mt='30px' textAlign='center' variant='h6' color='var(--eminence)' fontFamily='Titre'>{item.discription}</Typography>
             </Paper>
+            {/* {item.item.map((subItem, subIndex) => (
+            <Typography  fontFamily='Text' key={subIndex} textAlign='left' ><ArrowForwardIosIcon fontSize='small'/>{subItem}</Typography>
+            ))} */}
+            
             
         </Grid>
          ))}
         
        
         </Grid>
-
+        <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        data-aos="fade-down"
+      >
+        <Box  sx={style}>
+            <Typography  variant='h5' color='var(--eminence)' fontFamily='Titre' textAlign='center'>{obj1}</Typography>
+        {obj && obj.map((item, index) => (
+          <Typography textAlign='justify' fontFamily='Text' ><ArrowForwardIosIcon fontSize='small'/>{item}</Typography>
+          ))}
+        </Box>
+      </Modal>
     </Box>
   )
 }

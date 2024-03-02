@@ -28,8 +28,10 @@ const bottonstyle={
 
 }
 export default function Homepart5() {
+  
   return (
     <Container  sx={{bgcolor: "white",height:'100vh',mb:'60px'}}>
+      
   <Grid  data-aos="fade-up" container spacing={3}>
        
   <Grid item xs={12} md={5} >
@@ -56,7 +58,7 @@ export default function Homepart5() {
         placeholder="Massege ..."
         
        
-        style={{ fontFamily:'Text', width: '100%',height:250, resize: 'none' }}
+        style={{ fontFamily:'Text', width: '100%',height:100, resize: 'none' }}
       />
       </Box>
        <Button variant='contained' href='/Login' sx={bottonstyle}>Submit</Button>

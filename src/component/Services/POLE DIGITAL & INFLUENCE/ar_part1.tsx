@@ -8,8 +8,8 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: {xs:'60%',md:500},
-  bgcolor:'var(--Bright_Gray)',
-  border: '5px solid var(--eminence)',
+  bgcolor:'white',
+  
   boxShadow: 24,
   p:'40px',
   borderRadius:'30px',

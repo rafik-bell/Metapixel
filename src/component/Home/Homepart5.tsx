@@ -33,18 +33,11 @@ const bottonstyle={
 
 }
 export default function Homepart5() {
-  const tecnoItem = [
-    {discription:"Agilité"},
-    {discription:"Innovation"},
-    {discription:"Proximité"},
-    {discription:"Engagement"},
-    {discription:"Transparence"},
-    
-  ]
+ 
   
   return (
-    <Container  sx={{}}>
-      <Paper elevation={3}>
+    <Box  sx={{bgcolor:'var(--Bright_Gray)',}}>
+      <Paper elevation={3} sx={{mx:'10%'}}>
         <Box sx={{pt:"30px", pb:'20px'}}>
    <Typography  variant='h5' textAlign='center' color='var(--black)' fontFamily='Text'>Comment Nous Pouvons Vous Aider ?</Typography> 
    <Typography   textAlign='center' color='var(--vDBright_Gray)' fontFamily='Text'>CONTACT</Typography> 
@@ -86,7 +79,7 @@ export default function Homepart5() {
   
 
 
-    </Container>
+    </Box>
       
     
   )

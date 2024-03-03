@@ -39,8 +39,9 @@ export default function Home() {
       
       </section>
       <section   id="section4">
-      <Homepage7></Homepage7>
+      
       <Homepart5></Homepart5>
+      <Homepage7></Homepage7>
       </section>
 
       

@@ -10,19 +10,20 @@ import 'leaflet/dist/leaflet.css'
 const position = [36.7355608, 2.9462582];
 
 import icon from "../../assets/icons/marqueur.png";
-import L from "leaflet";
+import L, { Icon } from "leaflet"; // Import Icon from leaflet
 import { Grid } from "@mui/material";
 
 import { useRouter } from "next/router";
 
-var myIcon = L.icon({
+// Explicitly define the type of myIcon
+const myIcon: Icon = L.icon({
   iconUrl: icon.src,
   iconSize: [38, 95],
   iconAnchor: [22, 94],
   popupAnchor: [-3, -76],
 });
 
-var marker = null;
+let marker: L.Marker | null = null; // Explicitly type marker as L.Marker or null
 
 function MarkerCustom({ setCordinats, cordinates }: any) {
   const map = useMapEvents({
@@ -35,7 +36,6 @@ function MarkerCustom({ setCordinats, cordinates }: any) {
       marker = L.marker([lat, lng], { icon: myIcon }).addTo(map);
 
       setCordinats(e.latlng);
-      // console.log(e.latlng);
     },
   });
   return null;
@@ -45,8 +45,6 @@ const Map = ({ nameLat, nameLng, control }: any) => {
   const router = useRouter();
   const lang = router.locale;
   const [cordinates, setCordinats] = useState({});
-
-  // console.log("cordinates", JSON.stringify(cordinates.lat));
 
   return (
     <MapContainer

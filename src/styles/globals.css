@@ -24,9 +24,46 @@
     --black : #000000 ;
     --Dark_Charcoal:#333333;
     --Bright_Gray:#EBEBEC;
+    --DBright_Gray:#c2c2c2;
+    --vDBright_Gray:#909090;
+    --mDBright_Gray:#d9d9d9;
    
 
     /* Add more custom variables or global styles as needed */
   }
 
- 
+  .borderanimation {
+    --border-size: 3px;
+    --border-angle: 0turn;
+    width: 60vmin;
+    height: 50vmin;
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #213,
+        #112 50%,
+        #213
+      ),
+      conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+    background-size: calc(100% - (var(--border-size) * 2))
+        calc(100% - (var(--border-size) * 2)),
+      cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  
+    animation: bg-spin 3s linear infinite;
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+    }
+  
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }

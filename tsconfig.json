@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/component/Map/DynamicMap.ts", "src/component/Map/DynamicMap.ts"  ],
   "exclude": [
     "node_modules"
   ]

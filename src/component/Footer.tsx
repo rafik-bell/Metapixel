@@ -4,6 +4,7 @@ import { Box, Container, Grid, Typography,Link } from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import PlaceIcon from '@mui/icons-material/Place';
 
 const titele = {
   marginY: 3,
@@ -66,7 +67,7 @@ Note philosophie<br></br>
   </Grid>
   <Grid item xs={12} md={6} lg={3}>
   <Typography  sx= {{ ...titele, ...{ color:"var(--Bright_Gray)" } }}>Adresse</Typography>
-  <Typography fontFamily='Text' sx={{marginY: 3, color:"var(--Bright_Gray)"}}>contactez
+  <Typography fontFamily='Text' sx={{marginY: 3, color:"var(--Bright_Gray)"}}><PlaceIcon style={{marginBottom:'-4px'}}/> Cité Boubsila , Rue Djadel Mohamed, N° 11 rez de chaussée commune de Ouled Fayet, Alger
 
 </Typography>
 

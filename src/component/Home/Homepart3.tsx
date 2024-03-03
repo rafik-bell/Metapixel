@@ -42,16 +42,19 @@ const bottonstyle ={
 
 const paperStyle = {
   padding: '30px',
-  borderRadius:'30%',
+  borderRadius:'5%',
+  maxWidth:'73%',
   
   justifyContent: 'center',
   display: 'flex', 
+  flexDirection:'column',
   alignItems: 'center',
   bgcolor:'white',
-  height:'220px',
+  height:'300px',
   transition: 'box-shadow 0.3s',
+ 
   '&:hover': {
-    transform:' scale(1.1,1.1)',
+    transform:' scale(1.01,1.01)',
     boxShadow: '0px 4px 8px var(--Bright_Gray)',
   },
 };
@@ -60,7 +63,13 @@ const boxstyle={
   justifyContent: 'center',
   display: 'flex', 
   alignItems: 'center',
-  flexDirection:{xs:'column',md:"row"},
+  flexDirection:'row'
+};
+const boxstyle1={
+  justifyContent: 'center',
+  display: 'flex', 
+  alignItems: 'center',
+  flexDirection:'row'
 };
 
 export default function Homepart3() {
@@ -81,22 +90,25 @@ export default function Homepart3() {
   ];
 
   return (
-    <Box sx={{backgroundImage: "url('/650 350.png')",backgroundSize: 'cover',backgroundPosition: 'center',minHeight:'90vh', paddingX:"20px"}}>
-      <Box sx={{marginY:'10px',textAlign:{xs:'left',md:'center'}}}>
-        <Typography data-aos="fade-down" color='var(--Bright_Gray)' variant='h5' fontFamily='Titre' >NOS DOMAINES D'EXPERTISE</Typography>
-        <Typography variant='h6' color='var(--Bright_Gray)' fontFamily='Text'>Meta Pixel c'est l’alliance entre technologie , créativité et savoir-faire, nous mettons toute notre expertise , en transformation digitale notamment, au service de la croissance et du développement pérenne de nos partenaires</Typography>
-        <Typography variant='h6' color='var(--Bright_Gray)'  fontFamily='Titre'>Meta Pixel c'est trois pôles d'expertise qui travaillent en synergie pour vous </Typography>
+    <Box sx={{minHeight:'90vh'}}>
+      <Box sx={{textAlign:{xs:'left',md:'center'} ,px:'20px'}}>
+        <Typography data-aos="fade-down" color='var(--Bright_Gray)' variant='h4' fontFamily='Titre' >NOS DOMAINES D'EXPERTISE</Typography>
+        <Typography variant='h6' color='var(--Bright_Gray)' sx={{my:"20px"}}  fontFamily='Titre'>Meta Pixel c'est trois pôles d'expertise qui travaillent en synergie pour vous </Typography>
       </Box>
       <Grid  data-aos="fade-up" sx={boxstyle} container spacing={3}>
         {tecnoItem.map((item, index) => (
-          <Grid item xs={12} md={3} key={index}>
-            <Box sx={{width:'300px',marginY:'40px'}}>
-              <Button onClick={() => handleOpen1(item.link)}> {/* Use an arrow function here */}
-                <Paper elevation={24}  sx={paperStyle}>
-                  <Typography variant='h5' sx={{color:'var(--black)'}} fontFamily='Sous-titre' textAlign='center'>{item.discription}</Typography>
-                </Paper>
-              </Button>
+          <Grid item xs={12} md={4} key={index} sx={ boxstyle1}>
+            <Paper elevation={24}  sx={paperStyle}>
+            <Box sx={{width:'300px',marginY:'10px'}}>
+            
+                
+                  <Typography variant='h5' sx={{color:'var(--eminence)',}} fontFamily='Sous-titre' textAlign='center'>{item.discription}</Typography>
+                
+        
             </Box>
+            <Typography  sx={{color:'var(--DBright_Gray)',px:'20px',my:'30px'}} fontFamily='Sous-titre' textAlign='center'>Meta Pixel c'est trois pôles d'expertise qui travaillent en synergie pour vous</Typography>
+             <Button variant="contained" href={`/${item.link}`}sx={{ backgroundImage: 'linear-gradient(to bottom right, var(--black) , var(--eminence), var(--eminence))', color: 'white', fontSize: 18,fontWeight:600, fontFamily:"Text", bgcolor: 'white', '&:hover': { bgcolor: 'var(--eminence)', color: 'var(--Bright_Gray)', } }}>Lire Plus...</Button>
+             </Paper>
           </Grid>
         ))}
       </Grid>

@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Box, Button, Grid, Typography } from '@mui/material'
+import { Box, Button, Grid, Typography, keyframes } from '@mui/material'
 import { useEffect, useState } from 'react';
 import Carousel from 'react-material-ui-carousel'
+
 
 
 const gridstyle = {
@@ -71,7 +72,7 @@ export default function Homepart0() {
     </Box>
    
     </Box>
-    <Box sx={{backgroundImage: "url('/650 350.png')",backgroundSize: 'cover',backgroundPosition: 'center',minHeight:'100vh' }}>
+    <Box  sx={{backgroundImage: "url('/650 350.png')",backgroundSize: 'cover',backgroundPosition: 'center',minHeight:'100vh' }}>
     <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:{xs:'20%',md:'3%'},paddingTop:{xs:'50%',md:'17%'},px:{xs:'20px',md:'0px'}}}>
         <Image
         src="/White PNG 1.png" 

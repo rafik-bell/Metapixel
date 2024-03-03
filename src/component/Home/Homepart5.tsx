@@ -1,10 +1,15 @@
-import { Box, Button, Container, Grid, TextField, TextareaAutosize, Typography } from '@mui/material'
+import { Box, Button, Container, Grid, Paper, TextField, TextareaAutosize, Typography } from '@mui/material'
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import PlaceIcon from '@mui/icons-material/Place';
+
 import React from 'react'
 const boxstyle={
     justifyContent: 'center',
   display: 'flex', 
+
   
-  flexDirection:'column'
+  
  
 
 }
@@ -28,48 +33,57 @@ const bottonstyle={
 
 }
 export default function Homepart5() {
+  const tecnoItem = [
+    {discription:"Agilité"},
+    {discription:"Innovation"},
+    {discription:"Proximité"},
+    {discription:"Engagement"},
+    {discription:"Transparence"},
+    
+  ]
   
   return (
-    <Container  sx={{bgcolor: "white",height:'100vh',mb:'60px'}}>
-      
-  <Grid  data-aos="fade-up" container spacing={3}>
+    <Container  sx={{}}>
+      <Paper elevation={3}>
+        <Box sx={{pt:"30px", pb:'20px'}}>
+   <Typography  variant='h5' textAlign='center' color='var(--black)' fontFamily='Text'>Comment Nous Pouvons Vous Aider ?</Typography> 
+   <Typography   textAlign='center' color='var(--vDBright_Gray)' fontFamily='Text'>CONTACT</Typography> 
+   </Box> 
+  <Grid  data-aos="fade-up" container spacing={3} >
        
-  <Grid item xs={12} md={5} >
-    <Box sx={{marginY:'40px'}}>
+  <Grid item xs={12} md={4} >
+    <Box sx={{marginY:'15px'}}>
     <Box >
-       <Typography  variant='h3' textAlign='center' color='var(--black)' fontFamily='Text'>Write US</Typography>
+       <Typography   textAlign='center' color='var(--eminence)' sx={boxstyle} fontFamily='Text'><PlaceIcon style={{marginRight:'7px'}}/>Adresse</Typography>
+       <Typography  fontSize={12} textAlign='center' color='var(--vDBright_Gray)'  fontFamily='Text'>Cité Boubsila , Rue Djadel Mohamed, N° 11 rez de chaussée commune de Ouled Fayet, Alger</Typography>
        </Box>
     </Box>
   </Grid>
-  <Grid item xs={12} md={7} >
-    
-    <Box sx={boxstyle}>
-      <Box sx={boxstyle1}> <Typography   textAlign='left' variant='h6' color='var(--black)' fontFamily='Text'>Name</Typography>
-       <TextField id="standard-basic" style={{ fontFamily:'Text'}}placeholder="Enter your Name" label="" variant="standard" />
+  <Grid item xs={12} md={4} >
+    <Box sx={{marginY:'15px'}}>
+    <Box >
+       <Typography  textAlign='center' color='var(--eminence)' sx={boxstyle}  fontFamily='Text'><PhoneAndroidIcon style={{marginRight:'7px'}}/>Téléphone</Typography>
+       <Typography  fontSize={15}mt={1} textAlign='center' color='var(--vDBright_Gray)'  fontFamily='Text'>+213 770 11 70 03</Typography>
        </Box>
-      <Box sx={boxstyle1}>
-    <Typography   textAlign='left' variant='h6' color='var(--black)' fontFamily='Text'>Email</Typography>
-       <TextField id="standard-basic" style={{ fontFamily:'Text'}} placeholder="Enter your valid email address" label="" variant="standard" />
-       </Box>
-      <Box sx={boxstyle1}> 
-        <Typography   textAlign='left'  variant='h6' color='var(--black)' fontFamily='Text'>Write US</Typography>
-       <TextareaAutosize
-        minRows={3}
-        placeholder="Massege ..."
-        
-       
-        style={{ fontFamily:'Text', width: '100%',height:100, resize: 'none' }}
-      />
-      </Box>
-       <Button variant='contained' href='/Login' sx={bottonstyle}>Submit</Button>
-       </Box>
+    </Box>
   </Grid>
+  <Grid item xs={12} md={4} >
+    <Box sx={{marginY:'15px'}}>
+    <Box >
+       <Typography  textAlign='center'  color='var(--eminence)'sx={boxstyle} fontFamily='Text'><EmailIcon style={{marginRight:'7px'}}/>Email</Typography>
+       <Typography  fontSize={15}mt={1} textAlign='center' color='var(--vDBright_Gray)'  fontFamily='Text'>contact@metapixel-dz.com</Typography>
+       </Box>
+    </Box>
+  </Grid>
+ 
  
 </Grid>
 
 
 
+</Paper>
 
+  
 
 
     </Container>

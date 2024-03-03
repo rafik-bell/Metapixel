@@ -7,10 +7,10 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
-const position = [36.7355608, 2.9462582];
+const position : LatLngExpression= [36.7355608, 2.9462582];
 
 import icon from "../../assets/icons/marqueur.png";
-import L, { Icon } from "leaflet"; // Import Icon from leaflet
+import L, { Icon, LatLngExpression } from "leaflet"; // Import Icon from leaflet
 import { Grid } from "@mui/material";
 
 import { useRouter } from "next/router";
@@ -52,11 +52,11 @@ const Map = ({ nameLat, nameLng, control }: any) => {
       zoom={13}
       scrollWheelZoom={false}
       style={{ width: "100%", height: "600px" }}
-      eventHandlers={{
-        click: () => {
-          // console.log("map clicked");
-        },
-      }}
+      // eventHandlers={{
+      //   click: () => {
+      //     // console.log("map clicked");
+      //   },
+      // }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

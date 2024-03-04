@@ -6,7 +6,7 @@ import Carousel from 'react-material-ui-carousel'
 import imag from "../../assets/image/slider3.png"
 import imag1 from "../../assets/image/slider1.jpg"
 import imag2 from "../../assets/image/slider2.png"
-import image from '../../assets/image/WhitePNG1.png'
+import image from '../../assets/image/White PNG.png'
 
 
 
@@ -79,7 +79,7 @@ export default function Homepart0() {
     <Box  sx={{backgroundImage: `url(${imag2.src})`,backgroundSize: 'cover',backgroundPosition: 'center',minHeight:'100vh' }}>
     <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:{xs:'20%',md:'3%'},paddingTop:{xs:'50%',md:'17%'},px:{xs:'20px',md:'0px'}}}>
         <Image
-        src="/White PNG 1.png" 
+        src={image}
         alt="Description of the image"
         width={408}
         height={115}
@@ -101,7 +101,7 @@ export default function Homepart0() {
     <Box  sx={{backgroundImage:`url(${imag.src})`,backgroundSize: 'cover',backgroundPosition: 'center',minHeight:'100vh' }}>
     <Box sx={{display:'flex', flexDirection:'column',justifyContent:'center' ,alignItems:'center',paddingY:{xs:'20%',md:'3%'},paddingTop:{xs:'50%',md:'17%'},px:{xs:'20px',md:'0px'}}}>
         <Image
-        src="/White PNG 1.png" 
+        src={image}
         alt="Description of the image"
         width={408}
         height={115}

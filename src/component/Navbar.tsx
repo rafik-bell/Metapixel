@@ -4,7 +4,8 @@ import { AppBar, Box, Button, IconButton, Toolbar, Typography ,Link, Menu, MenuI
 import { useEffect, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import NavigationIcon from '@mui/icons-material/Navigation';
-
+import image from '../assets/image/WhitePNG1.png'
+import { useRouter } from 'next/router';
 const linkStyles = {
   color:'var(--Bright_Gray)' ,
   mr: 3,
@@ -52,6 +53,7 @@ const linkStyles_in_menu = {
 };
 
 export default function Navbar() {
+  const router = useRouter();
   const [scrollDirection, setScrollDirection] = useState('none');
   const [prevScrollY, setPrevScrollY] = useState(0);
 
@@ -104,10 +106,12 @@ export default function Navbar() {
           {/* Content for Box */}
         </Box>
       ) : (
+        <>
+       { router.pathname === '/' ? (
         <AppBar sx={{ bgcolor:prevScrollY? 'var(--black)' : 'transparent' }}>
           <Toolbar sx={{ position: 'sticky', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px' }}>
             <Image
-              src="/White PNG.png"
+              src={image}
               alt="Description of the image"
               width={204}
               height={57}
@@ -128,6 +132,34 @@ export default function Navbar() {
             </Box>
           </Toolbar>
         </AppBar>
+          ) : (
+         <AppBar sx={{ bgcolor: 'var(--black)' }}>
+         <Toolbar sx={{ position: 'sticky', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px' }}>
+           <Image
+             src={image}
+             alt="Description of the image"
+             width={204}
+             height={57}
+           />
+
+           <Box sx={{ display: { lg: 'flex', md: 'none', xs: 'none' }, flexDirection: 'row', alignItems: 'center', marginX: '2%' }}>
+             <Link href="/#section1" sx={linkStyles}><Typography sx={linkStylesT}>Qui sommes-nous</Typography></Link>
+             <Link href="/#section2" sx={linkStyles}><Typography sx={linkStylesT}>Expertise</Typography></Link>
+             <Link href="/#section3" sx={linkStyles}><Typography sx={linkStylesT}>Philosophie</Typography></Link>
+
+             <Button variant="contained" href="/#section4" sx={{ color: 'var(--eminence)', fontSize: 15, fontWeight: 600, bgcolor: 'white', '&:hover': { bgcolor: 'var(--eminence)', color: 'var(--Bright_Gray)', } }}>Contactez-nous</Button>
+           </Box>
+
+           <Box sx={{ display: { lg: 'none' } }}>
+             <Button  sx={{color:"var(--Bright_Gray)"}} id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} onClick={handleClick}>
+               <MenuIcon  fontSize="large"></MenuIcon>
+             </Button>
+           </Box>
+         </Toolbar>
+       </AppBar>
+       )}
+       </>
+      
       )}
      <Menu
         id="basic-menu"

@@ -55,7 +55,7 @@ Nous nous engageons à offrir à nos partenaires les outils technologiques, l’
   <Grid item xs={12} md={4} >
     <Box sx={{width:'300px',marginY:'40px'}}>
     <Box sx={boxstyle}>
-       <Typography  variant='h5' color='var(--eminence)' fontFamily='Titre'>{item.discription}</Typography>
+       <Typography  variant='h5' color='var(--Bright_Gray)' fontFamily='Titre'>{item.discription}</Typography>
        </Box>
     </Box>
   </Grid>

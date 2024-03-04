@@ -36,7 +36,7 @@ export default function Homepart5() {
  
   
   return (
-    <Box  sx={{bgcolor:'var(--Bright_Gray)',}}>
+    <Box  sx={{}}>
       <Paper elevation={3} sx={{mx:'10%'}}>
         <Box sx={{pt:"30px", pb:'20px'}}>
    <Typography  variant='h5' textAlign='center' color='var(--black)' fontFamily='Text'>Comment Nous Pouvons Vous Aider ?</Typography> 

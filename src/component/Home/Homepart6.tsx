@@ -11,9 +11,10 @@ import {
 } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { useState } from "react";
+import Picture1 from '../../assets/image/homeimage/Picture4.jpeg'
+import Picture2 from '../../assets/image/homeimage/Picture5.jpeg'
+import Picture3 from '../../assets/image/homeimage/Picture6.jpeg'
 
-import Map from '@/component/ui/map'
-import dynamic from "next/dynamic";
 
 
 
@@ -52,14 +53,15 @@ const paperStyle = {
   },
 };
 const boxstyle = {
+  
   padding: "30px",
   justifyContent: "center",
   display: "flex",
   alignItems: "center",
   flexDirection: "column",
   my: "30px",
-  height: "100px",
-  width: "100px",
+  height: "150px",
+  width: "150px",
   borderRadius: "45%",
   transition: "box-shadow 0.3s", // Add a smooth transition for the box-shadow
   boxShadow: "0 2px 4px var(--eminence)",
@@ -76,21 +78,10 @@ const boxstyleg = {
 };
 
 export default function Homepart6() {
-  const [open, setOpen] = useState(false);
-  const [obj, setObj] = useState<string[] | undefined>(); // Adjusting the type of obj
-  const [obj1, setObj1] = useState<string | undefined>(); // Adjusting the type of obj
-
-  const handleOpen1 = (index: any, index1: string) => {
-    setOpen(true);
-    setObj(index);
-    setObj1(index1);
-  };
-
-  const handleClose = () => setOpen(false);
-
+ 
   const tecnoItem = [
     {
-      image: "Picture1",
+      image: Picture1,
       discription: "Notre vision",
       item: [
         "Nous aspirons à être un acteur majeur dans le processus de transformation numérique en Algérie ",
@@ -98,21 +89,23 @@ export default function Homepart6() {
       ],
     },
     {
-      image: "Picture2",
+      image: Picture2,
       discription: "Notre mission",
       item: [
-        "Nous nous engageons à offrir à nos partenaires les outils technologiques , l'expertise et l'accompagnement nécessaires  à la réussite de leur transformation numérique ",
+        "Nous nous engageons à offrir à nos partenaires les outils technologiques ,l'expertise et l'accompagnement nécessaires  à la réussite de leur transformation numérique ",
       ],
     },
     {
-      image: "Picture3",
+      image: Picture3,
       discription: "Nos Valeurs",
       item: [
-        "INNOVATION",
-        "AGILITÉ",
-        "PROXIMITE",
-        "ENGAGEMENT",
         "TRANSPARENCE",
+        "ENGAGEMENT",
+        "INNOVATION",
+        "PROXIMITE",
+        
+        
+        "AGILITÉ",
       ],
     },
   ];
@@ -123,7 +116,7 @@ export default function Homepart6() {
       <Box sx={{ marginY: "20px", textAlign: "center" }}>
         <Typography
           data-aos="fade-down"
-          color="var(--eminence)"
+          color="var( --Bright_Gray)"
           variant="h4"
           fontFamily="Titre"
         >
@@ -135,6 +128,7 @@ export default function Homepart6() {
           <Grid item xs={12} md={3.4} sx={{ mx: "20px" }}>
             <Box
               sx={{
+               
                 width: "300px",
                 marginY: "40px",
                 justifyContent: "center",
@@ -145,65 +139,40 @@ export default function Homepart6() {
             >
               <Paper
                 elevation={3}
-                sx={boxstyle}
-                onClick={() => handleOpen1(item.item, item.discription)}
+                sx= {{ ...boxstyle, ...{ 
+                backgroundImage: `url(${item.image.src})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              border:'3px solid var( --Bright_Gray) ' } }}
+               
               >
-                <Image
-                  src={`/homeimage/${item.image}.png`}
-                  alt="Description of the image"
-                  width={60}
-                  height={60}
-                  objectFit="contain"
-                />
+               
               </Paper>
               <Typography
                 textAlign="center"
                 my={"20px"}
-                variant="h5"
-                color="var(--eminence)"
+                variant="h4"
+                color="var( --Bright_Gray)"
                 fontFamily="Titre"
               >
                 {item.discription}
               </Typography>
+              {item.item.map((item, index) => (
               <Typography
-                textAlign="center"
-                color="var( --vDBright_Gray)"
+                textAlign='justify'
+                color="var( --Bright_Gray)"
                 fontFamily="Text"
               >
-                Nous aspirons à être un acteur majeur dans le processus de
-                transformation numérique en Algérie
+               - {item}
               </Typography>
+               ))}
             </Box>
           </Grid>
         ))}
 
        
       </Grid>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-        data-aos="fade-down"
-      >
-        <Box sx={style}>
-          <Typography
-            variant="h5"
-            color="var(--eminence)"
-            fontFamily="Titre"
-            textAlign="center"
-          >
-            {obj1}
-          </Typography>
-          {obj &&
-            obj.map((item, index) => (
-              <Typography textAlign="justify" fontFamily="Text">
-                <ArrowForwardIosIcon fontSize="small" />
-                {item}
-              </Typography>
-            ))}
-        </Box>
-      </Modal>
+     
 
       
     </Container>

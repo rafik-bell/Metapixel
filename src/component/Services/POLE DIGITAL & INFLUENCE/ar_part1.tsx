@@ -64,15 +64,15 @@ export default function Ar_part1() {
         <Typography data-aos="fade-down" variant='h3' sx={titelstyle} fontFamily='Titre' >Services</Typography>
 
         <Typography data-aos="fade-down" variant='h4' color='var(--eminence)' fontFamily='Sous-titre'>POLE DIGITAL & INFLUENCE</Typography>
-        <Typography   fontFamily='Text' textAlign='justify'>Le Digital est au cœur de notre réflexion stratégique.</Typography>
+        <Typography   fontFamily='Sous-titre' variant='h6' mt='20px'   textAlign='center'>Notre expertise digitale est transversale et globale.</Typography>
+<Typography   fontFamily='Sous-titre' variant='h6' mb='20px'  textAlign='center'>Nous la mettons à votre service. </Typography>
         <Typography   fontFamily='Text' textAlign='justify'>Nous définissons votre stratégie Digitale et Web, en amont selon votre secteur d'activité , vos objectifs business et vos orientations Corporate .<br></br>
  Nous vous accompagnons durant toutes les phases de son exécution, de la phase audit et analyse à la phase développement et déploiement  .<br></br>
 Nous vous fournissons l'expertise et  les outils technologiques nécessaires pour optimiser vos investissements digitaux et maximiser leur impact.<br></br>
 
 Nous mettons aussi à votre disposition un écosystème d'influence digital et médias électroniques pour promouvoir votre marque, vos produits et protéger votre E-réputation.<br></br>
 
-<Typography   fontFamily='Sous-titre' variant='h6'   textAlign='center'>Notre expertise digitale est transversale et globale.</Typography>
-<Typography   fontFamily='Sous-titre' variant='h6'   textAlign='center'>Nous la mettons à votre service. </Typography>
+
 </Typography>
         
         <Grid  data-aos="fade-up" container spacing={2}>

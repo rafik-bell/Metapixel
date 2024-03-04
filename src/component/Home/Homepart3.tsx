@@ -84,13 +84,13 @@ export default function Homepart3() {
   const handleClose = () => setOpen(false);
 
   const tecnoItem = [
-    {discription:"Pôle Technolgy",link:'\POLE_TECHNOLOGY'},
-    {discription:"Pôle Créa & Conseil",link:'\POLE_CREA_&_CONSEIL'},
-    {discription:"Pôle Digital & Influence",link:'\POLE_DIGITAL_&_INFLUENCE'}
+    {titre:"Pôle Technolgy",link:'\POLE_TECHNOLOGY',discription:"Nous vous offrons les moyens de réussir votre transition numérique en toute sécurité"},
+    {titre:"Pôle Créa & Conseil",link:'\POLE_CREA_&_CONSEIL',discription:"Meta Pixel c'est toutes les compétences d'une agence de communication globale,l'expertise technologique en plus"},
+    {titre:"Pôle Digital & Influence",link:'\POLE_DIGITAL_&_INFLUENCE',discription: "Notre expertise digitale est transversale et globale.Nous la mettons à votre service."}
   ];
 
   return (
-    <Box sx={{minHeight:'90vh'}}>
+    <Box sx={{minHeight:'80vh'}}>
       <Box sx={{textAlign:{xs:'left',md:'center'} ,px:'20px'}}>
         <Typography data-aos="fade-down" color='var(--Bright_Gray)' variant='h4' fontFamily='Titre' >NOS DOMAINES D'EXPERTISE</Typography>
         <Typography variant='h6' color='var(--Bright_Gray)' sx={{my:"20px"}}  fontFamily='Titre'>Meta Pixel c'est trois pôles d'expertise qui travaillent en synergie pour vous </Typography>
@@ -102,11 +102,11 @@ export default function Homepart3() {
             <Box sx={{width:'300px',marginY:'10px'}}>
             
                 
-                  <Typography variant='h5' sx={{color:'var(--eminence)',}} fontFamily='Sous-titre' textAlign='center'>{item.discription}</Typography>
+                  <Typography variant='h5' sx={{color:'var(--eminence)',}} fontFamily='Sous-titre' textAlign='center'>{item.titre}</Typography>
                 
         
             </Box>
-            <Typography  sx={{color:'var(--DBright_Gray)',px:'20px',my:'30px'}} fontFamily='Sous-titre' textAlign='center'>Meta Pixel c'est trois pôles d'expertise qui travaillent en synergie pour vous</Typography>
+            <Typography  sx={{color:'var(--DBright_Gray)',px:'10px',my:'30px'}} fontFamily='Sous-titre' textAlign='center'>{item.discription}</Typography>
              <Button variant="contained" href={`/${item.link}`}sx={{ backgroundImage: 'linear-gradient(to bottom right, var(--black) , var(--eminence), var(--eminence))', color: 'white', fontSize: 18,fontWeight:600, fontFamily:"Text", bgcolor: 'white', '&:hover': { bgcolor: 'var(--eminence)', color: 'var(--Bright_Gray)', } }}>Lire Plus...</Button>
              </Paper>
           </Grid>

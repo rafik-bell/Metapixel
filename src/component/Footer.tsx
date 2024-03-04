@@ -5,6 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import PlaceIcon from '@mui/icons-material/Place';
+import image from '../assets/image/WhitePNG1.png'
 
 const titele = {
   marginY: 3,
@@ -20,6 +21,7 @@ const gridstyle = {
   justifyContent: 'start',
   alignItems:"center",
   marginY: 1,
+  fontFamily:"Text"
 };
 
 export default function Footer() {
@@ -30,7 +32,7 @@ export default function Footer() {
       <Grid container spacing={1}>
   <Grid sx={gridstyle} item  lg={12}>
   <Image
-        src="/White PNG.png" 
+        src={image}
         alt="Description of the image"
         width={340}
         height={96} 
@@ -56,13 +58,13 @@ Note philosophie<br></br>
    
   </Grid>
   <Grid item xs={12} md={6} lg={3}>
-  <Typography sx= {{ ...titele, ...{ color:"var(--Bright_Gray)" } }}>Services</Typography>
-  <Typography  fontFamily='Text' sx={{color:"var(--Bright_Gray)"}}>
+  <Typography sx= {{ ...titele, ...{  color:"var(--Bright_Gray)" } }}>Services</Typography>
+  
   <Box sx={gridstyle}><Link sx={{ textDecoration:'none',color:"var(--Bright_Gray)"}} href='\POLE_TECHNOLOGY' >POLE TECHNOLOGY</Link> <br></br></Box> 
   <Box sx={gridstyle}><Link sx={{ textDecoration:'none',color:"var(--Bright_Gray)"}}  href='\POLE_CREA_&_CONSEIL' >Pole Créa & Conseil</Link> <br></br></Box> 
   <Box sx={gridstyle}><Link sx={{ textDecoration:'none',color:"var(--Bright_Gray)"}}  href='\POLE_DIGITAL_&_INFLUENCE'>Pole Digital & Influence</Link> <br></br></Box> 
 
-</Typography>
+
    
   </Grid>
   <Grid item xs={12} md={6} lg={3}>
@@ -75,12 +77,12 @@ Note philosophie<br></br>
   </Grid>
   <Grid item xs={12} md={6} lg={3}>
   <Typography sx= {{ ...titele, ...{ color:"var(--Bright_Gray)" } }}>Nous</Typography>
-  <Typography  fontFamily='Text' sx={{color:"var(--Bright_Gray)" }}> Politique  <br></br>
+  <Typography  fontFamily='Text' sx={{color:"var(--Bright_Gray)" }}> Politique  <br></br></Typography>
  <Box sx={gridstyle}><LinkedInIcon/><Link sx={{ textDecoration:'none',color:"var(--Bright_Gray)"}} href='https://www.linkedin.com/company/meta-pixel-algeria/' target="_blank">Linkedin</Link> <br></br></Box> 
  <Box  sx={gridstyle}><FacebookIcon/><Link sx={{ textDecoration:'none',color:"var(--Bright_Gray)"}} href='https://www.facebook.com/MetaPixelDZ' target="_blank">Facebook </Link><br></br></Box>
- <Box sx={gridstyle}><LocalPhoneIcon/>+213 770 11 70 03<br></br></Box> 
+ <Box sx={gridstyle}><LocalPhoneIcon/>+213 770 11 70 03</Box> 
 
-</Typography>
+
     
   </Grid>
 </Grid>

@@ -38,14 +38,11 @@ export default function Part1() {
         <Typography data-aos="fade-down" variant='h3' sx={titelstyle} fontFamily='Titre' >Services</Typography>
 
         <Typography data-aos="fade-down" variant='h4' color='var(--eminence)' fontFamily='Sous-titre'>POLE TECHNOLOGY</Typography>
-        <Typography   fontFamily='Text' textAlign='justify'>Nous vouso ffrons les moyens de réussir votre transition numérique en toute sécurité </Typography>
-        <Typography  fontFamily='Text' textAlign='justify'>Nos équipes d'experts vous accompagnent dans vos projets  en mettant à votre disposition leur expertise technique  et toutes les solutions  et outils technologiques nécessaires à la mise en place de systèmes d’information modernes ,intelligents et performants. 
-          Nos équipes d'experts s'engagent à être vos interlocuteurs uniques sur tous les volets de vos projets  IT : 
-          <Typography fontFamily='Sous-titre' sx={{textAlign: {xs: 'left',md:'justify'}}}>Audit et Diagnostic , Project Managment ,Développement , Acquisition de Licences, Intégration, Infrastructure, Support et Maintenance, et bien plus encore.</Typography>
-          Nous avons les profils  qu'ils vous faut et la formule qui convient à vos besoins :
-          <Typography fontFamily='Sous-titre' >- Mode Full Intégration <br></br>
-          - Mode Projet<br></br>
-          - Mode Assistance</Typography></Typography>
+        <Typography variant='h6'   fontFamily='Sous-titre' textAlign='justify'>Nous vous offrons les moyens de réussir votre transition numérique en toute sécurité </Typography>
+        <Typography  fontFamily='Text' textAlign='justify'>Nos équipes d'experts vous accompagnent dans vos projets IT en mettant à votre disposition leur expertise technique et toutes les solutions et outils technologiques nécessaires à la réalisation de vos objectifs. 
+        <Typography  fontFamily='Text' textAlign='justify'> Nous nous engageons à vous fournir une prise en charge de qualité adapté à vos besoins et à votre secteur d’activité.</Typography>
+
+        </Typography>
           </Box>
         <Grid  data-aos="fade-up" container spacing={2}>
         {tecnoItem.map((item, index) => (

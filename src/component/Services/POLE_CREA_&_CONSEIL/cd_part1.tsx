@@ -70,7 +70,6 @@ export default function Cd_part1() {
  une véritable  mosaïque  de conseillers , d'experts et de créatifs passionnés , une équipe polyvalente aux expertises complémentaires avec une forte culture numérique.<br></br>
 Nous agissons sur tous les niveaux de la communication :  stratégique , créative et opérationnelle.<br></br>
 une approche globale adaptée aux nouveaux usages numériques qui donnera de la cohérence et de la force à vos prises de paroles et actions , qu'elles soient marketing ou institutionnelles .<br></br>
-Nos équipes d'experts vous accompagnent en amont  dans l'analyse et la définition de vos besoins en fonction de votre secteur d'activité et vos objectifs business, des équipes dédiées à votre compte  qui veilleront à la réussite de vos projets de communication de la réflexion à l'exécution finale.
 
 </Typography>
         

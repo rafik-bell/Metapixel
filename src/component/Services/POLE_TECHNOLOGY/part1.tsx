@@ -28,7 +28,7 @@ export default function Part1() {
     {image:"Developpement Technique.png",discription:"Développement Technique"},
     {image:"Gestion de Projet.png",discription:"Gestion de Projet"},
     {image:"Conseils & Audit.png",discription:"Conseils & Audit"},
-    {image:"Installation Reseaux & Systemes.png",discription:"Installation Réseaux & Systèmes"},
+    {image:"InstallationReseaux&Systemes.png",discription:"Installation Réseaux & Systèmes"},
     {image:"Formation.png",discription:"Formation"},
     {image:"Hebergement & Infogerance.png",discription:"Hébergement & Infogérance"}
   ]

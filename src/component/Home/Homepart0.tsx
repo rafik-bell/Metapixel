@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Box, Button, Grid, Typography, keyframes } from '@mui/material'
 import { useEffect, useState } from 'react';
 import Carousel from 'react-material-ui-carousel'
-import imag from "../../assets/image/slider3.png"
+import imag from "../../assets/image/slider3.1.png"
 import imag1 from "../../assets/image/slider1.jpg"
 import imag2 from "../../assets/image/slider2.png"
 import image from '../../assets/image/White PNG.png'

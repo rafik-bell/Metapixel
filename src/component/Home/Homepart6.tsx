@@ -84,8 +84,8 @@ export default function Homepart6() {
       image: Picture1,
       discription: "Notre vision",
       item: [
-        "Nous aspirons à être un acteur majeur dans le processus de transformation numérique en Algérie ",
-        "en accompagnant activement la transition Digitale des entreprises algériennes",
+        "Nous aspirons à être un acteur majeur dans le processus de transformation numérique en Algérie,en accompagnant activement la transition Digitale des entreprises algériennes ",
+       
       ],
     },
     {
@@ -159,11 +159,11 @@ export default function Homepart6() {
               </Typography>
               {item.item.map((item, index) => (
               <Typography
-                textAlign='justify'
+                
                 color="var( --Bright_Gray)"
                 fontFamily="Text"
               >
-               - {item}
+               {item}
               </Typography>
                ))}
             </Box>

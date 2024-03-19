@@ -41,7 +41,7 @@ border:'2px solid var(--Bright_Gray)',
 {/* <Typography variant='h5' color="var(--black)"  fontFamily='Sous-titre'> Nous Approche Holistique</Typography> */}
 <Typography mb='10px'  color="var(--Bright_Gray)" fontSize={38} fontFamily='Sous-titre'>Notre expertise technologique au service de vos ambitions</Typography>
 <Typography  fontFamily='Text' variant='h6' color="var(--vDBright_Gray)" textAlign='justify' >Meta Pixel est une agence Digitale Globale qui met à votre disposition son expertise et tout son savoir-faire dans le domaine du Conseil en Management ,l’Expertise Technologique et la Communication.</Typography>
-<Box sx={gridstyle}><Button variant="contained" sx={{ my:'30px',bgcolor: 'var(--eminence)', color: 'white', fontSize: 18,fontWeight:600, fontFamily:"Text", '&:hover': { bgcolor:'var(--Bright_Gray)' , color: 'var(--eminence)', } }}>Lire Plus...</Button></Box>
+<Box sx={gridstyle}><Button href='/QSN' variant="contained" sx={{ my:'30px',bgcolor: 'var(--eminence)', color: 'white', fontSize: 18,fontWeight:600, fontFamily:"Text", '&:hover': { bgcolor:'var(--Bright_Gray)' , color: 'var(--eminence)', } }}>Lire Plus...</Button></Box>
 
 </Box>
 </Box>
